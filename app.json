@@ -1,0 +1,77 @@
+
+{
+  "id": "2ff74bb7-6307-4eb6-bd6e-c3d4f0f553ef",
+  "name": "HOBE365B",
+  "publisher": "Netcompany",
+  "version": "1.0.9.0",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "./Images/HBR-Logo.png",
+  "target": "OnPrem",
+  "dependencies": [
+    {
+      "appId": "ac762be1-e90f-4a72-b519-612a5e3ddc2e",
+      "name": "OIOUBL",
+      "version": "15.1.37881.38071",
+      "publisher": "Microsoft"
+    },   
+    {
+      "appId": "644f7e5b-a81c-408a-aaa2-766e655a80a3",
+      "publisher": "Microsoft",
+      "name": "Payment and Reconciliation Formats (DK)",
+      "version": "15.1.37881.38071"
+    },
+    {
+      "appId": "63ca2fa4-4f03-4f2b-a480-172fef340d3f",
+      "publisher": "Microsoft",
+      "name": "System Application",
+      "version": "15.1.37881.38071"
+    },
+    {
+      "appId": "437dbf0e-84ff-417a-965d-ed2bb9650972",
+      "publisher": "Microsoft",
+      "name": "Base Application",
+      "version": "15.1.37881.38071"
+    },
+    {
+      "appId": "4b915d7e-c02a-435f-85ab-649086c1e002",
+      "publisher": "Continia Software",
+      "name": "Continia Core",
+      "version": "2.0.0.0"
+    },
+    {
+      "appId": "6da8dd2f-e698-461f-9147-8e404244dd85",
+      "publisher": "Continia Software",
+      "name": "Continia Document Capture 365",
+      "version": "6.0.0.0"
+    },
+    {
+      "appId": "8d4eab29-8c7f-4b6c-be9a-b7fdfb9da196",
+      "publisher": "Continia Software",
+      "name": "Continia Expense Management 365",
+      "version": "4.0.0.0"
+    },
+    {
+      "appId": "14340ba6-5934-4145-8e14-dbf1846fef80",
+      "publisher": "Continia Software",
+      "name": "Continia Payment Management 365",
+      "version": "1.4.0.0"
+    },
+    {
+      "appId": "1dafd1ac-6218-4a6e-9bd7-3dec0f14a072",
+      "publisher": "Continia Software",
+      "name": "Continia Payment Management 365 (DK)",
+      "version": "1.4.0.0"
+    }    
+  ],
+  "screenshots": [],
+  "platform": "15.0.0.0",
+  "contextSensitiveHelpUrl": "https://ALProject1.com/help/",
+  "showMyCode": true,
+  "runtime": "4.0",
+  "features": [ "TranslationFile", "GenerateCaptions"]  
+  }

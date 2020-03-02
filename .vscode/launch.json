@@ -1,0 +1,122 @@
+{
+    "version": "1.0.9.0 ",
+    "configurations": [
+        {
+        
+            "type": "al",
+            "request": "launch",
+            "name": "DEV",
+            "server": "http://192.168.100.22",
+            "serverInstance": "DEVBC150",
+            "authentication": "Windows",
+            "breakOnError": true,
+            "launchBrowser": true,
+            "enableLongRunningSqlStatements": true,
+            "enableSqlInformationDebugger": true,
+            "port": 8049,
+            "schemaUpdateMode": "ForceSync"
+        
+        }, 
+           { 
+            "type": "al",
+            "request": "launch",
+            "name": "DEV-1",
+            "server": "http://192.168.100.22",
+            "serverInstance": "DEVBC150-1",
+            "authentication": "Windows",
+            "breakOnError": true,
+            "launchBrowser": true,
+            "enableLongRunningSqlStatements": true,
+            "enableSqlInformationDebugger": true,
+            "port": 8149,
+            "schemaUpdateMode": "ForceSync"
+        },
+        { 
+            "type": "al",
+            "request": "launch",
+            "name": "TEST-1",
+            "server": "http://192.168.100.22",
+            "serverInstance": "TESTBC150-1",
+            "authentication": "Windows",
+            "breakOnError": true,
+            "launchBrowser": true,
+            "enableLongRunningSqlStatements": true,
+            "enableSqlInformationDebugger": true,
+            "port": 8649,
+            "schemaUpdateMode": "ForceSync"
+        },
+        {
+            "type": "al",
+            "request": "launch",
+            "name": "DEV-2",
+            "server": "http://192.168.100.22",
+            "serverInstance": "DEVBC150-2",
+            "authentication": "Windows",
+            "breakOnError": true,
+            "launchBrowser": true,
+            "enableLongRunningSqlStatements": true,
+            "enableSqlInformationDebugger": true,
+            "port": 8249,
+            "schemaUpdateMode": "ForceSync"
+        },
+        {
+            "type": "al",
+            "request": "launch",
+            "name": "DEV-3",
+            "server": "http://192.168.100.22",
+            "serverInstance": "DEVBC150-3",
+            "authentication": "Windows",
+            "breakOnError": true,
+            "launchBrowser": true,
+            "enableLongRunningSqlStatements": true,
+            "enableSqlInformationDebugger": true,
+            "port": 8349,
+            "schemaUpdateMode": "ForceSync"
+        },
+        {
+            "type": "al",
+            "request": "launch",
+            "name": "DEV-4",
+            "server": "http://192.168.100.22",
+            "serverInstance": "DEVBC150-4",
+            "authentication": "Windows",
+            "breakOnError": true,
+            "launchBrowser": true,
+            "enableLongRunningSqlStatements": true,
+            "enableSqlInformationDebugger": true,
+            "port": 8449,
+            "schemaUpdateMode": "ForceSync"
+        },
+        {
+            "type": "al",
+            "request": "launch",
+            "name": "PROD - DEV",
+            "server": "http://hbr-bc-01/",
+            "serverInstance": "DEVBC15",
+            "authentication": "Windows",
+            "startupObjectId": 5977,
+            "startupObjectType": "Page",
+            "breakOnError": true,
+            "launchBrowser": true,
+            "enableLongRunningSqlStatements": true,
+            "enableSqlInformationDebugger": true,
+            "port": 7349
+        },
+        {
+        
+            "type": "al",
+            "request": "launch",
+            "name": "DEV",
+            "server": "http://localhost",
+            "serverInstance": "DEVBC15",
+            "authentication": "Windows",
+            "breakOnError": true,
+            "launchBrowser": true,
+            "enableLongRunningSqlStatements": true,
+            "enableSqlInformationDebugger": true,
+            "port": 7349,
+            "schemaUpdateMode": "Synchronize"
+        
+        } 
+    ]
+}

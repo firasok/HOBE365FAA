@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <ReportParameters>
+    <ReportParameter Name="ResponseTime_ServItemLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>ResponseTime_ServItemLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>ResponseTime_ServItemLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Priority_ServItemLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Priority_ServItemLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Priority_ServItemLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="DocNo_ServItemLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>DocNo_ServItemLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>DocNo_ServItemLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="RepairStatus_ServItemLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>RepairStatus_ServItemLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>RepairStatus_ServItemLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ServItemGr_ServItemLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>ServItemGr_ServItemLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>ServItemGr_ServItemLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ServItemNo_ServItemLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>ServItemNo_ServItemLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>ServItemNo_ServItemLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ItemNo_ServItemLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>ItemNo_ServItemLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>ItemNo_ServItemLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="SerialNo_ServItemLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>SerialNo_ServItemLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>SerialNo_ServItemLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ServShelfNo_ServItemLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>ServShelfNo_ServItemLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>ServShelfNo_ServItemLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Warranty_ServItemLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Warranty_ServItemLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Warranty_ServItemLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ContractNo_ServItemLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>ContractNo_ServItemLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>ContractNo_ServItemLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Line_No_Caption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Line_No_Caption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Line_No_Caption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="DescriptionCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>DescriptionCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>DescriptionCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Description_2Caption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Description_2Caption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Description_2Caption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Service_Item_Group_CodeCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Service_Item_Group_CodeCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Service_Item_Group_CodeCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Contract_No_Caption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Contract_No_Caption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Contract_No_Caption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Location_of_Service_ItemCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Location_of_Service_ItemCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Location_of_Service_ItemCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Customer_No_Caption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Customer_No_Caption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Customer_No_Caption</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="TodayFormat">
+          <DataField>TodayFormat</DataField>
+        </Field>
+        <Field Name="CompanyName">
+          <DataField>CompanyName</DataField>
+        </Field>
+        <Field Name="ServItem_ServItemLine">
+          <DataField>ServItem_ServItemLine</DataField>
+        </Field>
+        <Field Name="ServItemLineFilter">
+          <DataField>ServItemLineFilter</DataField>
+        </Field>
+        <Field Name="ResponseDate_ServItemLine">
+          <DataField>ResponseDate_ServItemLine</DataField>
+        </Field>
+        <Field Name="ResponseTime_ServItemLine">
+          <DataField>ResponseTime_ServItemLine</DataField>
+        </Field>
+        <Field Name="Priority_ServItemLine">
+          <DataField>Priority_ServItemLine</DataField>
+        </Field>
+        <Field Name="DocNo_ServItemLine">
+          <DataField>DocNo_ServItemLine</DataField>
+        </Field>
+        <Field Name="RepairStatus_ServItemLine">
+          <DataField>RepairStatus_ServItemLine</DataField>
+        </Field>
+        <Field Name="ServItemGr_ServItemLine">
+          <DataField>ServItemGr_ServItemLine</DataField>
+        </Field>
+        <Field Name="ServItemNo_ServItemLine">
+          <DataField>ServItemNo_ServItemLine</DataField>
+        </Field>
+        <Field Name="ItemNo_ServItemLine">
+          <DataField>ItemNo_ServItemLine</DataField>
+        </Field>
+        <Field Name="SerialNo_ServItemLine">
+          <DataField>SerialNo_ServItemLine</DataField>
+        </Field>
+        <Field Name="ServShelfNo_ServItemLine">
+          <DataField>ServShelfNo_ServItemLine</DataField>
+        </Field>
+        <Field Name="Warranty_ServItemLine">
+          <DataField>Warranty_ServItemLine</DataField>
+        </Field>
+        <Field Name="ContractNo_ServItemLine">
+          <DataField>ContractNo_ServItemLine</DataField>
+        </Field>
+        <Field Name="FormatWarranty">
+          <DataField>FormatWarranty</DataField>
+        </Field>
+        <Field Name="ServiceTasksCaption">
+          <DataField>ServiceTasksCaption</DataField>
+        </Field>
+        <Field Name="CurrReportPageNoCaption">
+          <DataField>CurrReportPageNoCaption</DataField>
+        </Field>
+        <Field Name="ResponseDateCaption">
+          <DataField>ResponseDateCaption</DataField>
+        </Field>
+        <Field Name="Line_No_">
+          <DataField>Line_No_</DataField>
+        </Field>
+        <Field Name="Description">
+          <DataField>Description</DataField>
+        </Field>
+        <Field Name="Description_2">
+          <DataField>Description_2</DataField>
+        </Field>
+        <Field Name="Service_Item_Group_Code">
+          <DataField>Service_Item_Group_Code</DataField>
+        </Field>
+        <Field Name="Contract_No_">
+          <DataField>Contract_No_</DataField>
+        </Field>
+        <Field Name="Location_of_Service_Item">
+          <DataField>Location_of_Service_Item</DataField>
+        </Field>
+        <Field Name="Customer_No_">
+          <DataField>Customer_No_</DataField>
+        </Field>
+        <Field Name="Description_2_Lbl">
+          <DataField>Description_2_Lbl</DataField>
+        </Field>
+        <Field Name="Line_No_Lbl">
+          <DataField>Line_No_Lbl</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>
