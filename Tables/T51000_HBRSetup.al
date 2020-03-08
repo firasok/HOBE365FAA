@@ -98,6 +98,7 @@ table 51000 "HBR Setup"
       Caption = 'Label Printer 12';
       DataClassification = EndUserIdentifiableInformation;
     }
+    
   }
   keys
   {

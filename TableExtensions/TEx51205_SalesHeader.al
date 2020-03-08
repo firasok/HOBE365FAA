@@ -30,7 +30,7 @@ tableextension 51205 "HBR Sales Header" extends "Sales Header"
         end;
     end;
 
-    trigger OnBeforeDelete()
+    trigger OnbeforeDelete()
     var
         SalesLine: Record "Sales Line";
         JobTask: Record "Job Task";
@@ -56,17 +56,17 @@ tableextension 51205 "HBR Sales Header" extends "Sales Header"
             until SalesLine.Next() = 0;
 
         //>>HBR-FAA
-        if rec."External Document No." <> '' then begin
-            if IntegrationHeader.get(rec."External Document No.") then begin
-                if UpdateWebshopLog(Rec) then
-                    HBRIntegrationManagment.WebshopIntegrationLog(IntegrationTable::WebOrder, rec."External Document No.", Rec."No.", IntegrationAction::FullyInvoiced)
-                else
-                    HBRIntegrationManagment.WebshopIntegrationLog(IntegrationTable::WebOrder, rec."External Document No.", Rec."No.", IntegrationAction::Delete)
-
-            end;
+        //if rec."External Document No." <> '' then begin
+        if rec.Webshop then begin
+            //if IntegrationHeader.get(rec."External Document No.") then begin
+            //if UpdateWebshopLog(Rec) then
+            //HBRIntegrationManagment.WebshopIntegrationLog(IntegrationTable::WebOrder, rec."External Document No.", Rec."No.", IntegrationAction::FullyInvoiced)
+            //else
+            HBRIntegrationManagment.WebshopIntegrationLog(IntegrationTable::WebOrder, rec."External Document No.", Rec."No.", IntegrationAction::Delete)
         end;
-        //<<HBR-FAA
     end;
+    //<<HBR-FAA
+    //end;
 
     procedure UpdateWebshopLog(pSalesHeader: Record "Sales Header"): Boolean
     var

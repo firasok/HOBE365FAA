@@ -18,36 +18,42 @@ table 51104 "Integration Setup"
         field(20; "G/L Account"; Code[20])
         {
             Caption = 'G/L Account';
+            TableRelation = "G/L Account";
             DataClassification = ToBeClassified;
         }
 
         field(30; "VAT G/L Account"; Code[20])
         {
             Caption = 'VAT G/L Account';
+            TableRelation = "G/L Account";
             DataClassification = ToBeClassified;
         }
 
         field(40; "G/L Account External"; Code[20])
         {
             Caption = 'G/L Account External';
+            TableRelation = "G/L Account";
             DataClassification = ToBeClassified;
         }
 
         field(50; "VAT  G/L Account Ext."; Code[20])
         {
             Caption = 'VAT G/L Account Ext.';
+            TableRelation = "G/L Account";
             DataClassification = ToBeClassified;
         }
 
         field(55; "Owner Entrance Acc."; Code[20])
         {
             Caption = 'Owner Entrance Acc.';
+            TableRelation = "G/L Account";
             DataClassification = ToBeClassified;
         }
 
 
         field(60; "Global Dimension 1 Code"; Code[20])
         {
+            TableRelation = "Dimension Value" where("Dimension Code" = FILTER(1));
             Caption = 'Global Dimension 1 Code';
             CaptionClass = '1,1,1';
             DataClassification = ToBeClassified;
@@ -56,6 +62,7 @@ table 51104 "Integration Setup"
         field(65; "Global Dimension 2 Code"; Code[20])
         {
             Caption = 'Global Dimension 2 Code';
+            TableRelation = "Dimension Value" where("Dimension Code" = FILTER(2));
             CaptionClass = '1,1,2';
             DataClassification = ToBeClassified;
         }
@@ -101,36 +108,42 @@ table 51104 "Integration Setup"
         field(110; "Gen. Bus. Posting Group"; Code[10])
         {
             Caption = 'Gen. Bus. Posting Group';
+            TableRelation = "Gen. Business Posting Group";
             DataClassification = ToBeClassified;
         }
 
         field(120; "Gen. Prod. Posting Group"; Code[10])
         {
             Caption = 'Gen. Prod. Posting Group';
+            TableRelation = "Gen. Product Posting Group";
             DataClassification = ToBeClassified;
         }
 
         field(130; "Int. Cust. Price Grp."; Code[10])
         {
-            Caption = 'INT. Cust. Price Grp.';
+            Caption = 'Cust. Price Grp.';
+            TableRelation = "Customer Price Group";
             DataClassification = ToBeClassified;
         }
 
         field(140; "Ext. Cust. Price Grp."; Code[10])
         {
             Caption = 'EXT. Cust. Price Grp.';
+            TableRelation = "Customer Price Group";
             DataClassification = ToBeClassified;
         }
 
         field(150; "EK Cust. Price Grp."; Code[10])
         {
             Caption = 'EK. Cust. Price Grp.';
+            TableRelation = "Customer Price Group";
             DataClassification = ToBeClassified;
         }
 
         field(160; "Ship to Code"; Boolean)
         {
             Caption = 'Ship to Code';
+            TableRelation = "Ship-to Address";
             DataClassification = ToBeClassified;
         }
 
@@ -146,7 +159,19 @@ table 51104 "Integration Setup"
             DataClassification = ToBeClassified;
         }
 
+        field(190; "Text G/L Acc."; Code[20])
+        {
+            Caption = 'Text G/L Acc.';
+            TableRelation = "G/L Account";
+            DataClassification = ToBeClassified;
+        }
 
+        field(2000; "Unit Of Measure"; Text[100])
+        {
+            Caption = 'Text Unit Of Measure';
+            TableRelation = "Unit of Measure";
+            DataClassification = ToBeClassified;
+        }
     }
     keys
     {

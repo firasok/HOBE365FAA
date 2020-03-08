@@ -994,8 +994,8 @@
           <note from="Xliff Generator" annotates="general" priority="3">Table Webshop Integration Log - Field Integration Table - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 1210651842 - Field 1515770340 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Customer,Contact,UserGroup,Item,ItemUsergroup</source>
-          <target state="translated">Kunde,Kontakt,Brugergruppe,Vare,Varebrugergruppe</target>
+          <source>Customer,Contact,UserGroup,Item,WebOrder</source>
+          <target state="translated">Debitor,Kontakt,Brugergruppe,Vare,WebOrder</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Webshop Integration Log - Field Integration Table - Property OptionCaption</note>
         </trans-unit>
@@ -1018,8 +1018,8 @@
           <note from="Xliff Generator" annotates="general" priority="3">Table Webshop Integration Log - Field Integration Action - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 1210651842 - Field 2995769332 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Create,Update,Delete</source>
-          <target state="translated">Opret,Opdater,Slet</target>
+          <source>Create,Update,Delete,FullyInvoiced</source>
+          <target state="translated">Opret,Opdater,Slet,FullyInvoiced</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Webshop Integration Log - Field Integration Action - Property OptionCaption</note>
         </trans-unit>

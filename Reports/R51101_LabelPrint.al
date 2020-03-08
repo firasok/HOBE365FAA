@@ -108,21 +108,21 @@ report 51101 "Print Label"
     trigger OnPreReport()
     var
     begin
-        //LabelPrinterManagment.LabelInitializer();
+        LabelPrinterManagment.LabelInitializer();
     end;
 
     trigger OnPostReport()
     var
     begin
         if not ItemRec.get(ItemNo) then exit;
-        //LabelPrinterManagment.LabelItemBarcode(ItemRec."No.", ItemRec.Description, VariantCode, noOfLabels,Printer);
+        LabelPrinterManagment.LabelItemBarcode(ItemRec."No.", ItemRec.Description, VariantCode, noOfLabels, Printer);
     end;
 
     var
         ItemRec: Record Item;
         SerialNoInfo: Record "Serial No. Information";
         LotNoInfo: Record "Lot No. Information";
-        //LabelPrinterManagment: Codeunit "Label Printer Managment";
+        LabelPrinterManagment: Codeunit "Label Printer Managment";
         ItemNo: Code[20];
         VariantCode: Code[20];
         SerieNummer: Code[20];

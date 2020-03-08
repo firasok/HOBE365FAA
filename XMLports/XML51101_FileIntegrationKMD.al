@@ -10,7 +10,6 @@ xmlport 51101 "File Integration KMD"
     {
         textelement(root)
         {
-
             tableelement(IntegrationDataKMD; "Integration Data KMD")
             {
                 AutoReplace = false;
@@ -171,6 +170,12 @@ xmlport 51101 "File Integration KMD"
                 group(KMD)
                 {
                     caption = 'KMD';
+
+                    field(JourTemplate; JourTemplate)
+                    {
+                        Caption = 'Jornal Template Name';
+                        TableRelation = "Gen. Journal Template";
+                    }
                     field(JournalName; JournalName)
                     {
                         Caption = 'Jornal Name';
@@ -180,7 +185,7 @@ xmlport 51101 "File Integration KMD"
                         var
                             GenJournalBatch: Record "Gen. Journal Batch";
                         begin
-                            GenJournalBatch.SETRANGE("Journal Template Name", 'GENERELT');
+                            GenJournalBatch.SETRANGE("Journal Template Name", JourTemplate);
                             if GenJournalBatch.findset then begin
                                 IF Page.RUNMODAL(Page::"General Journal Batches", GenJournalBatch) = ACTION::LookupOK THEN
                                     JournalName := GenJournalBatch.Name;
@@ -257,7 +262,6 @@ xmlport 51101 "File Integration KMD"
         dd: Integer;
         RecNo: Integer;
         TotalRecNo: Integer;
-
         lText001: Label 'Type Journal Name';
         lText002: Label 'Insert Records : @1@@@@@@@@@@@@@@@@@@@@@@@@@\';
         lText003: Label 'Nor a valid account, Account No. %1';
@@ -267,8 +271,7 @@ xmlport 51101 "File Integration KMD"
 
     begin
 
-        //HBR setup table, new field , Jurnal name.
-        IF NOT GenJournalBatch.GET('GENERELT', JournalName) THEN
+        IF NOT GenJournalBatch.GET(JourTemplate, JournalName) THEN
             ERROR(lText001);
         lineNo := 0;
         NoSeries := GenJournalBatch."No. Series";
@@ -276,7 +279,7 @@ xmlport 51101 "File Integration KMD"
         Window.OPEN(lText002);
         Window.UPDATE(1, 0);
 
-        GenJournalLine.SetRange("Journal Template Name", 'GENERELT');
+        GenJournalLine.SetRange("Journal Template Name", JourTemplate);
         GenJournalLine.SetRange("Journal Batch Name", GenJournalBatch.Name);
         if GenJournalLine.FindLast() then
             lineNo := GenJournalLine."Line No."
@@ -320,7 +323,6 @@ xmlport 51101 "File Integration KMD"
                 EVALUATE(GenJournalLine.Amount, (amountStr));
                 GenJournalLine.VALIDATE(Amount, GenJournalLine.Amount / 100);
             END;
-
             GenJournalLine.Description := integrationDataKMD."Posting Text";
             GenJournalLine.INSERT;
             integrationDataKMD.processed := TRUE;
@@ -330,12 +332,11 @@ xmlport 51101 "File Integration KMD"
             RecNo := RecNo + 1;
             Window.UPDATE(1, ROUND(RecNo / TotalRecNo * 10000, 1));
         UNTIL integrationDataKMD.NEXT = 0;
-
     end;
 
     var
-        //Global variables
         fileName: Text[250];
+        JourTemplate: Code[20];
         JournalName: code[20];
         "Line No.": Integer;
         LineNo: integer;

@@ -13,4 +13,15 @@ codeunit 51104 INTEventSubscriber
     end;
 
 
+    [EventSubscriber(ObjectType::Codeunit, 80, 'OnAfterPostSalesDoc', '', true, true)]
+    local procedure OnAfterPostSalesDoc(VAR SalesHeader: Record "Sales Header"; GenJnlPostLine: Codeunit "Gen. Jnl.-Post Line";SalesShptHdrNo : Code [20];SalesInvHdrNo: code[20])
+
+    var
+        INTEventFunctions: Codeunit INTEventFunctions;
+
+    begin        
+      INTEventFunctions.UpdateWebshopIntegrationLog(SalesHeader,GenJnlPostLine,'','','','');
+    end;
+
+
 }

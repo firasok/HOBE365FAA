@@ -17,4 +17,19 @@ codeunit 51103 INTEventFunctions
         end;
     end;
 
+    procedure UpdateWebshopIntegrationLog(VAR SalesHeader: Record "Sales Header";
+                                                VAR GenJnlPostLine: Codeunit "Gen. Jnl.-Post Line";
+                                                SalesShptHdrNo: Code[20]; RetRcpHdrNo: Code[20];
+                                                SalesInvHdrNo: Code[20]; SalesCrMemoHdrNo: Code[20])
+    var
+        HBRIntegrationManagment: Codeunit "HBR Integration Managment";
+        IntegrationTable: Option Customer,Contact,UserGroup,Item,WebOrder;
+        IntegrationAction: option Create,Update,Delete,FullyInvoiced;
+
+    begin
+        if SalesHeader.Webshop then begin
+            HBRIntegrationManagment.WebshopIntegrationLog(IntegrationTable::WebOrder, SalesHeader."External Document No.", SalesHeader."No.", IntegrationAction::FullyInvoiced);
+        end;
+    end;
+
 }

@@ -34,9 +34,10 @@ page 51156 Test
 
                     //PaymentJurnal.Run();
                     // PrintLabel.Run();
-                    KMDJournal.Run();
-                    Clear(KMDJournal);
-
+                    //KMDJournal.Run();
+                    //Clear(KMDJournal);
+                    salesInvoice.Run();
+                    Clear(salesInvoice);
                 end;
             }
         }
@@ -47,4 +48,5 @@ page 51156 Test
 
         SKFJournal: XmlPort "SKF Payment journal";
         KMDJournal: XmlPort "File Integration KMD";
+        salesInvoice: Page "Posted Sales Invoice Subform";
 }

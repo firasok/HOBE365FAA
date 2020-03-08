@@ -579,7 +579,7 @@
           <note from="Xliff Generator" annotates="general" priority="3">Table Integration Setup - Field Gen. Prod. Posting Group - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 1237520843 - Field 4289912368 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>INT. Cust. Price Grp.</source>
+          <source>Cust. Price Grp.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Integration Setup - Field Int. Cust. Price Grp. - Property Caption</note>
         </trans-unit>
@@ -607,6 +607,16 @@
           <source>Footer Text</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Integration Setup - Field Footer Text - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1237520843 - Field 1548254106 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Text G/L Acc.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Integration Setup - Field Text G/L Acc. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1237520843 - Field 2660559065 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Text Unit Of Measure</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Integration Setup - Field Unit Of Measure - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 1237520843 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Integration Setup</source>
@@ -6993,6 +7003,16 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">XmlPort SKF Payment journal - Property Caption</note>
         </trans-unit>
+        <trans-unit id="XmlPort 2723382487 - XmlPortNode 3883182266 - Method 192879926 - NamedType 1541774099" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Invoice No.:</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort SKF Payment journal - XmlPortNode Integer - Method OnBeforeInsertRecord - NamedType lText000</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 2723382487 - Control 147876582 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Jornal Template Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort SKF Payment journal - Control JourTemplate - Property Caption</note>
+        </trans-unit>
         <trans-unit id="XmlPort 2723382487 - Control 1830915383 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Journal Batch</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -7018,6 +7038,16 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">XmlPort SKF Payment journal - Control fileName - Property Caption</note>
         </trans-unit>
+        <trans-unit id="XmlPort 2723382487 - Control 4179522451 - Method 1213635141 - NamedType 1541774099" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Upload .csv file</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort SKF Payment journal - Control fileName - Method OnLookup - NamedType lText000</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 2723382487 - RequestPage 2516438534 - Method 4128543304 - NamedType 1541774099" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Journal Type Name  and Posting date cannot be empty</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort SKF Payment journal - RequestPage RequestOptionsPage - Method OnClosePage - NamedType lText000</note>
+        </trans-unit>
         <trans-unit id="XmlPort 593685398 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>File Integration KMD</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -7027,6 +7057,11 @@
           <source>KMD</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">XmlPort File Integration KMD - Control KMD - Property caption</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 593685398 - Control 147876582 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Jornal Template Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort File Integration KMD - Control JourTemplate - Property Caption</note>
         </trans-unit>
         <trans-unit id="XmlPort 593685398 - Control 1972486082 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Jornal Name</source>

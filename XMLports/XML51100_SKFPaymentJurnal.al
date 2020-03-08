@@ -12,13 +12,11 @@ xmlport 51100 "SKF Payment journal"
     {
         textelement(root)
         {
-
             tableelement(Integer; Integer)
             {
                 AutoReplace = false;
                 AutoSave = false;
                 AutoUpdate = false;
-
                 SourceTableView = sorting(Number) WHERE(Number = const(1));
                 textelement(RepportDate) { }
                 textelement(Fejer) { }
@@ -37,7 +35,7 @@ xmlport 51100 "SKF Payment journal"
                             currXMLport.SKIP;
                     end;
                 }
-                
+
                 textelement(feesVar) { }
                 textelement(VATVar) { }
 
@@ -50,23 +48,22 @@ xmlport 51100 "SKF Payment journal"
 
                 trigger OnBeforeInsertRecord()
                 Var
+                    lText000: Label 'Invoice No.:';
 
                 begin
+                        
                     IF DELCHR(UPPERCASE(VATVar), '<>', ' ') = 'JA' THEN
                         currXMLport.SKIP;
                     GenJournalLine.RESET;
-                    GenJournalLine.SETRANGE("Journal Template Name", 'KASSE');
-                    //GenJournalLine.SETRANGE("Journal Batch Name", 'STANDARD');
+                    GenJournalLine.SETRANGE("Journal Template Name", JourTemplate);
                     GenJournalLine.SETRANGE("Journal Batch Name", journalBatch);
                     IF GenJournalLine.FINDLAST THEN BEGIN
                         lineNo := GenJournalLine."Line No.";
                     END ELSE
                         lineNo := 0;
-
                     GenJournalLine.RESET;
                     GenJournalLine.VALIDATE("Journal Template Name", GenJournalBatch."Journal Template Name");
                     GenJournalLine.VALIDATE("Journal Batch Name", GenJournalBatch.Name);
-
                     lineNo += 10000;
                     GenJournalLine."Line No." := lineNo;
                     GenJournalLine.VALIDATE("Document No.", DocumentNo);
@@ -76,7 +73,7 @@ xmlport 51100 "SKF Payment journal"
                         GenJournalLine.VALIDATE("Posting Date", postingDate);
                     GenJournalLine."Account Type" := GenJournalLine."Account Type"::"G/L Account";
                     GenJournalLine.VALIDATE("Account No.", AccountNo);
-                    GenJournalLine.VALIDATE(Description, FORMAT(invoiceDate) + ' ' + 'fakt.nr.: ' + invoiceNo);
+                    GenJournalLine.VALIDATE(Description, FORMAT(invoiceDate) + ' ' + lText000 + invoiceNo);
                     IF amountVar <> '' THEN
                         EVALUATE(amountDecemal, amountVar);
 
@@ -102,11 +99,8 @@ xmlport 51100 "SKF Payment journal"
                     VATVar := '';
                     amountDecemal := 0;
                 END;
-
             }
-
         }
-
     }
     requestpage
     {
@@ -114,9 +108,13 @@ xmlport 51100 "SKF Payment journal"
         {
             area(content)
             {
-
                 group(SKF)
                 {
+                    field(JourTemplate; JourTemplate)
+                    {
+                        Caption = 'Jornal Template Name';
+                        TableRelation = "Gen. Journal Template";
+                    }
 
                     field(JournalBatch; JournalBatch)
                     {
@@ -128,15 +126,13 @@ xmlport 51100 "SKF Payment journal"
 
                         begin
                             CLEAR(GenJournalBatch);
-                            //GenJournalBatch.SETRANGE(GenJournalBatch."Journal Template Name", 'GENERELT');
-                            GenJournalBatch.SETRANGE(GenJournalBatch."Journal Template Name", 'KASSE');
+                            GenJournalBatch.SETRANGE(GenJournalBatch."Journal Template Name", JourTemplate);
                             IF GenJournalBatch.FINDSET THEN BEGIN
                                 generalJournalBatches.SETTABLEVIEW(GenJournalBatch);
                                 generalJournalBatches.LOOKUPMODE(TRUE);
                                 IF generalJournalBatches.RUNMODAL = ACTION::LookupOK THEN BEGIN
                                     generalJournalBatches.GETRECORD(GenJournalBatch);
                                     journalBatch := GenJournalBatch.Name;
-                                    //journalBatch := 'STANDARD';
                                 END;
                             END
                         end;
@@ -190,7 +186,6 @@ xmlport 51100 "SKF Payment journal"
                                 END ELSE
                                     ;
                         END;
-
                     }
                     field(postingDate; postingDate)
                     {
@@ -209,15 +204,14 @@ xmlport 51100 "SKF Payment journal"
                         ApplicationArea = all;
                         trigger OnLookup(var Text: Text): Boolean
                         var
+                            lText000: Label 'Upload .csv file';
                             FileManagement: Codeunit "File Management";
                         begin
-                            fileName := FileManagement.OpenFileDialog('Indlæse .csv fil', fileName, '');
+                            fileName := FileManagement.OpenFileDialog(lText000, fileName, '');
                             currXMLport.FILENAME(fileName);
 
                         end;
-
                     }
-
                 }
             }
         }
@@ -234,10 +228,11 @@ xmlport 51100 "SKF Payment journal"
         }
         trigger OnClosePage()
         var
+            lText000: Label 'Journal Type Name  and Posting date cannot be empty';
 
         begin
             IF (journalBatch = '') OR (postingDate = 0D) THEN
-                ERROR('Kladdetypenavn og Bogføringsdate skal være udfyles');
+                ERROR(lText000);
             IF GenJournalBatch."No. Series" <> '' THEN BEGIN
                 CLEAR(NoSeriesMgt);
                 DocumentNo := NoSeriesMgt.TryGetNextNo(GenJournalBatch."No. Series", postingDate);
@@ -252,6 +247,7 @@ xmlport 51100 "SKF Payment journal"
         "BankAccount": Record "Bank Account";
         GLAccount: Record "G/L Account";
         NoSeriesMgt: Codeunit NoSeriesManagement;
+        JourTemplate: Code[20];
         DocumentNo: Code[15];
         RapportdDte: Text[20];
         rapportNo: Text[20];
@@ -263,11 +259,9 @@ xmlport 51100 "SKF Payment journal"
         JournalBatch: Code[20];
         FileNam: Text[250];
         lineNo: Integer;
-        contraAccountType: Option " ",Bank,Finans;
+        contraAccountType: Option ,Bank,Finans;
         contraAccountNo: code[20];
         amountDecemal: Decimal;
         postingDate: Date;
         bankNo: Code[20];
-
-
 }

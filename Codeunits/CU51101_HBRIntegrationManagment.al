@@ -7,7 +7,7 @@ codeunit 51101 "HBR Integration Managment"
     procedure CreateInvoiceHeader(var pIntegrationHeader: record "integration header";
     var pInvoiceDate: Date): Integer
     var
-        integrationSetup: Record "Integration Setup";
+        IntegrationSetup: Record "Integration Setup";
         IntegrationHeader: Record "Integration Header";
         customerRec: Record Customer;
         salesHeader: Record "Sales Header";
@@ -21,15 +21,22 @@ codeunit 51101 "HBR Integration Managment"
         errorCounter := 0;
         invoiceDate := pInvoiceDate;
         IntegrationHeader := pIntegrationHeader;
-        integrationSetup.get(IntegrationHeader."Application Area");
+        IntegrationSetup.get(IntegrationHeader."Application Area");
         ourRefrence := DELCHR(IntegrationHeader."Our Reference", '<>', ' ');
         if not customerRec.get(IntegrationHeader."Customer No.") then exit(errorCounter + 1);
         salesHeader.INIT;
+        salesHeader.SetHideValidationDialog(true);
         salesHeader."Document Type" := salesHeader."Document Type"::Invoice;
         salesHeader."No." := '';
         salesHeader.INSERT(TRUE);
         salesHeader.VALIDATE(salesHeader."Sell-to Customer No.", customerRec."No.");
-        IF IntegrationHeader."Application Area" in [IntegrationHeader."Application Area"::Blindalarm, IntegrationHeader."Application Area"::ABAafgift, IntegrationHeader."Application Area"::UrsFrbMat, IntegrationHeader."Application Area"::AIAUdrykning, IntegrationHeader."Application Area"::Planorama] THEN salesHeader.VALIDATE(salesHeader."Sell-to Customer No.", IntegrationHeader."Customer No.");
+        IF IntegrationHeader."Application Area" in [IntegrationHeader."Application Area"::Blindalarm,
+                                                    IntegrationHeader."Application Area"::ABAafgift,
+                                                    IntegrationHeader."Application Area"::UrsFrbMat,
+                                                    IntegrationHeader."Application Area"::AIAUdrykning,
+                                                    IntegrationHeader."Application Area"::Planorama]
+        THEN
+            salesHeader.VALIDATE(salesHeader."Sell-to Customer No.", IntegrationHeader."Customer No.");
         if (ourRefrence <> '') then
             salesHeader."Sell-to Contact" := ourRefrence
         else
@@ -60,7 +67,7 @@ codeunit 51101 "HBR Integration Managment"
     var pSalesHeader: record "Sales Header";
     pLineNo: Integer) resultMessage: Integer
     var
-        integrationSetup: Record "Integration Setup";
+        IntegrationSetup: Record "Integration Setup";
         IntegrationHeader: Record "Integration Header";
         integrationLine: Record "Integration Line";
         salesHeader: Record "Sales Header";
@@ -80,7 +87,7 @@ codeunit 51101 "HBR Integration Managment"
             "Line No." := SalesLine."Line No."
         else
             "Line No." := 0;
-        integrationSetup.get(IntegrationHeader."Application Area");
+        IntegrationSetup.get(IntegrationHeader."Application Area");
         integrationLine.reset;
         salesLine.reset;
         integrationLine.SETRANGE(integrationLine."Document No.", IntegrationHeader."No.");
@@ -90,13 +97,13 @@ codeunit 51101 "HBR Integration Managment"
                 IntegrationHeader."Application Area"::ABAopret, IntegrationHeader."Application Area"::Blindalarm, IntegrationHeader."Application Area"::AIAUdrykning, IntegrationHeader."Application Area"::UrsFrbMat:
                     begin
                         IF integrationLine."Line Reference" <> '' THEN BEGIN
-                            "Line No." := CommentLine(SalesHeader, integrationLine."Line Reference", "Line No.");
+                            "Line No." := CommentLine(SalesHeader, IntegrationSetup, integrationLine."Line Reference", "Line No.");
                         END;
                     end;
                 IntegrationHeader."Application Area"::ABAafgift:
                     begin
-                        "Line No." := CommentLine(SalesHeader, DELCHR(Text001 + DelChr(integrationLine."Unit of Measure", '<>', ' ')), "Line No.");
-                        "Line No." := CommentLine(SalesHeader, integrationLine."Line Reference", "Line No.");
+                        "Line No." := CommentLine(SalesHeader, IntegrationSetup, DELCHR(Text001 + DelChr(integrationLine."Unit of Measure", '<>', ' ')), "Line No.");
+                        "Line No." := CommentLine(SalesHeader, IntegrationSetup, integrationLine."Line Reference", "Line No.");
                     end;
             end;
             "Line No." := "Line No." + 10000;
@@ -106,56 +113,57 @@ codeunit 51101 "HBR Integration Managment"
             salesLine."Line No." := "Line No.";
             salesLine.insert(true);
             salesLine.VALIDATE(salesLine.Type, salesLine.Type::"G/L Account");
-            salesLine.VALIDATE(salesLine."No.", integrationSetup."G/L Account");
+            salesLine.VALIDATE(salesLine."No.", IntegrationSetup."G/L Account");
             if integrationLine.Quantity > 0 then
                 Salesline.VALIDATE(Quantity, integrationLine.Quantity)
             else
                 Salesline.VALIDATE(Quantity, 1);
             Salesline.VALIDATE("Unit Price", integrationLine.Amount);
+            if customerRec.get(IntegrationHeader."Customer No.") then;
             case customerRec."Customer Posting Group" of
                 'EKSTERN':
                     begin
-                        CASE integrationSetup."Application Area" OF
-                            integrationSetup."Application Area"::Planorama:
+                        CASE IntegrationSetup."Application Area" OF
+                            IntegrationSetup."Application Area"::Planorama:
                                 BEGIN
                                     IF integrationLine."School Course" THEN BEGIN
                                         salesLine.VALIDATE(salesLine.Type, salesLine.Type::"G/L Account");
-                                        Salesline.VALIDATE("No.", integrationSetup."G/L Account");
+                                        Salesline.VALIDATE("No.", IntegrationSetup."G/L Account");
                                     END
                                     ELSE BEGIN
                                         customerRec.TESTFIELD("Gen. Bus. Posting Group");
-                                        IF customerRec."Gen. Bus. Posting Group" = integrationSetup."Gen. Bus. Posting Group" THEN begin
+                                        IF customerRec."Gen. Bus. Posting Group" = IntegrationSetup."Gen. Bus. Posting Group" THEN begin
                                             salesLine.VALIDATE(salesLine.Type, salesLine.Type::"G/L Account");
-                                            Salesline.VALIDATE("No.", integrationSetup."G/L Account External")
+                                            Salesline.VALIDATE("No.", IntegrationSetup."G/L Account External")
                                         end
                                         ELSE begin
                                             salesLine.VALIDATE(salesLine.Type, salesLine.Type::"G/L Account");
-                                            Salesline.VALIDATE("No.", integrationSetup."VAT  G/L Account Ext.");
+                                            Salesline.VALIDATE("No.", IntegrationSetup."VAT  G/L Account Ext.");
                                         end;
                                     END;
                                 END ELSE BEGIN
                                             salesLine.VALIDATE(salesLine.Type, salesLine.Type::"G/L Account");
-                                            Salesline.VALIDATE("No.", integrationSetup."G/L Account External");
+                                            Salesline.VALIDATE("No.", IntegrationSetup."G/L Account External");
                                         END;
                         END
                     end;
                 'EKSTERN EK':
                     begin
                         salesLine.VALIDATE(salesLine.Type, salesLine.Type::"G/L Account");
-                        Salesline.VALIDATE("No.", integrationSetup."Owner Entrance Acc.");
+                        Salesline.VALIDATE("No.", IntegrationSetup."Owner Entrance Acc.");
                     end;
                 'INTERN':
                     begin
                         salesLine.VALIDATE(salesLine.Type, salesLine.Type::"G/L Account");
-                        Salesline.VALIDATE("No.", integrationSetup."G/L Account");
+                        Salesline.VALIDATE("No.", IntegrationSetup."G/L Account");
                     end;
                 else begin
                         salesLine.VALIDATE(salesLine.Type, salesLine.Type::"G/L Account");
-                        Salesline.VALIDATE("No.", integrationSetup."G/L Account");
+                        Salesline.VALIDATE("No.", IntegrationSetup."G/L Account");
                     end;
             end;
-            salesLine.Validate("Shortcut Dimension 1 Code", integrationSetup."Global Dimension 1 Code");
-            salesLine.Validate("Shortcut Dimension 2 Code", integrationSetup."Global Dimension 2 Code");
+            salesLine.Validate("Shortcut Dimension 1 Code", IntegrationSetup."Global Dimension 1 Code");
+            salesLine.Validate("Shortcut Dimension 2 Code", IntegrationSetup."Global Dimension 2 Code");
             if integrationLine.Description <> '' then
                 SalesLine.VALIDATE(Description, integrationLine.Description);
             if integrationLine."Unit of Measure" <> '' then
@@ -173,11 +181,9 @@ codeunit 51101 "HBR Integration Managment"
         exit("Line No.");
     end;
 
-    procedure InsertCommentLine(var pIntegrationHeader: Record "Integration Header";
-    var pSalesHeader: Record "Sales Header";
-    pErrorCounter: Integer): Integer
+    procedure InsertCommentLine(var pIntegrationHeader: Record "Integration Header"; var pSalesHeader: Record "Sales Header"; pErrorCounter: Integer): Integer
     var
-        integrationSetup: Record "Integration Setup";
+        IntegrationSetup: Record "Integration Setup";
         IntegrationHeader: Record "Integration Header";
         IntegrationCommentLine: record "Integration Comment Line";
         Salesheader: Record "Sales Header";
@@ -187,6 +193,7 @@ codeunit 51101 "HBR Integration Managment"
     begin
         errorCounter := pErrorCounter;
         IntegrationHeader := pIntegrationHeader;
+        if IntegrationSetup.get(IntegrationHeader."Application Area") then;
         if SalesHeader.get(pSalesHeader."Document Type", pSalesHeader."No.") then;
         IntegrationCommentLine.SETRANGE("Document No.", IntegrationHeader."No.");
         if not IntegrationCommentLine.FindFirst() then begin
@@ -200,40 +207,50 @@ codeunit 51101 "HBR Integration Managment"
             else
                 "Line No." := 0;
         end;
-        "line No." := CommentLine(Salesheader, '', "Line No.");
-        IF integrationSetup."Header Text" <> '' THEN BEGIN
-            "Line No." := CommentLine(Salesheader, integrationSetup."Header Text", "Line No.");
+        "line No." := CommentLine(Salesheader, IntegrationSetup, '', "Line No.");
+        IF IntegrationSetup."Header Text" <> '' THEN BEGIN
+            "Line No." := CommentLine(Salesheader, IntegrationSetup, IntegrationSetup."Header Text", "Line No.");
             IF IntegrationHeader."Application Area" <> IntegrationHeader."Application Area"::AIAUdrykning THEN BEGIN
-                "Line No." := CommentLine(Salesheader, '', "Line No.");
+                "Line No." := CommentLine(Salesheader, IntegrationSetup, '', "Line No.");
             END;
         END;
         IF IntegrationCommentLine.FINDSET THEN
             REPEAT
-                "Line No." := CommentLine(Salesheader, DELCHR(IntegrationCommentLine.Comment, '<>', ' '), "Line No.");
+                "Line No." := CommentLine(Salesheader, IntegrationSetup, DELCHR(IntegrationCommentLine.Comment, '<>', ' '), "Line No.");
             UNTIL IntegrationCommentLine.NEXT = 0;
-        "Line No." := CommentLine(Salesheader, '', "Line No.");
+        "Line No." := CommentLine(Salesheader, IntegrationSetup, '', "Line No.");
         exit("Line No.");
     end;
 
-    procedure CommentLine(var pSalesHeader: Record "Sales Header";
-    pComment: Text[250];
-    pLineNo: Integer): integer
+    procedure CommentLine(var pSalesHeader: Record "Sales Header"; var pIntegrationSetup: record "Integration Setup"; pComment: Text[250]; pLineNo: Integer): integer
     var
         "Line No.": Integer;
         commentText: Text[250];
         salesHeader: Record "Sales Header";
         SalesLine: Record "Sales Line";
+        IntegrationSetup: Record "Integration Setup";
+
     begin
         SalesHeader := pSalesHeader;
+        IntegrationSetup := pIntegrationSetup;
         "Line No." := pLineNo;
         commentText := pComment;
         "Line No." := "Line No." + 10000;
+        IntegrationSetup.TestField("Text G/L Acc.");
+        IntegrationSetup.TestField("Unit Of Measure");
         Salesline.INIT;
         Salesline.VALIDATE("Document Type", salesHeader."Document Type");
         Salesline.VALIDATE("Document No.", salesHeader."No.");
         Salesline.VALIDATE("Line No.", "Line No.");
-        Salesline.VALIDATE(Description, commentText);
         Salesline.INSERT(TRUE);
+        if commentText <> '' then begin
+            Salesline.VALIDATE(SalesLine.Type, SalesLine.Type::"G/L Account");
+            Salesline.VALIDATE(SalesLine."No.", IntegrationSetup."Text G/L Acc.");
+            Salesline.VALIDATE(SalesLine.Quantity, 1);
+            Salesline.VALIDATE(SalesLine."Unit of Measure Code", IntegrationSetup."Unit Of Measure");
+        END;
+        Salesline.VALIDATE(Description, commentText);
+        Salesline.Modify(TRUE);
         exit("Line No.");
     end;
 
@@ -241,7 +258,7 @@ codeunit 51101 "HBR Integration Managment"
     "pLineNo.": Integer;
     pApplicationArea: Integer): Integer
     var
-        integrationSetup: Record "Integration Setup";
+        IntegrationSetup: Record "Integration Setup";
         Salesheader: Record "Sales Header";
         SalesLine: Record "Sales Line";
         appliacationArea: Integer;
@@ -249,16 +266,16 @@ codeunit 51101 "HBR Integration Managment"
     begin
         appliacationArea := pApplicationArea;
         "Line No." := "pLineNo.";
-        integrationSetup.get(appliacationArea);
-        IF integrationSetup."Footer Text" <> '' THEN BEGIN
-            "Line No." := CommentLine(SalesHeader, integrationSetup."Header Text", "Line No.");
+        IntegrationSetup.get(appliacationArea);
+        IF IntegrationSetup."Footer Text" <> '' THEN BEGIN
+            "Line No." := CommentLine(SalesHeader, IntegrationSetup, IntegrationSetup."Header Text", "Line No.");
         END;
     end;
 
     procedure checkIntegrationHeader(var pIntegrationHeader: Record "Integration Header"): Integer
     var
         IntegrationHeader: Record "Integration Header";
-        integrationSetup: Record "Integration Setup";
+        IntegrationSetup: Record "Integration Setup";
         customerRec: Record Customer;
         processLogManagment: Codeunit "Process Log Managment";
         errorCounter: Integer;
@@ -275,7 +292,7 @@ codeunit 51101 "HBR Integration Managment"
             erroBool := true;
         end;
         if IntegrationHeader."Integration Source" <> IntegrationHeader."Integration Source"::WEBSHOP then begin
-            if not integrationSetup.get(IntegrationHeader."Application Area") then begin
+            if not IntegrationSetup.get(IntegrationHeader."Application Area") then begin
                 processLogManagment.InsertProcessLogLine(StrSubstNo(Text002, format(ApplicationArea), IntegrationHeader."No."), logNo);
                 errorCounter += 1;
                 erroBool := true;
@@ -417,6 +434,7 @@ codeunit 51101 "HBR Integration Managment"
         salesHeader.VALIDATE(salesHeader."Document Date", InvoiceDate);
         salesHeader.VALIDATE(salesHeader."Posting Date", InvoiceDate);
         salesHeader.VALIDATE(salesHeader."Order Date", IntegrationHeader."Date of Creation");
+        salesHeader.Validate(salesHeader.Webshop, true);
         salesHeader.Validate(salesHeader."External Document No.", IntegrationHeader."No.");
         salesHeader.Modify(true);
         IF DELCHR(IntegrationHeader."Reference Remarks", '<>', ' ') <> '' THEN;
@@ -455,7 +473,7 @@ codeunit 51101 "HBR Integration Managment"
         IF integrationLine.FINDSET THEN recordsCount := integrationLine.count;
         REPEAT
             IF integrationLine."Line Reference" <> '' THEN BEGIN
-                "Line No." := CommentLine(SalesHeader, integrationLine."Line Reference", "Line No.");
+                "Line No." := CommentLine(SalesHeader, integrationSetup, integrationLine."Line Reference", "Line No.");
             END;
             "Line No." := "Line No." + 10000;
             salesLine.INIT;

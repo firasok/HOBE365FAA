@@ -9,10 +9,7 @@ pageextension 51104 HBRPItemVariantExt extends "Item Variants"
                 Visible = false;
                 ApplicationArea = all;
             }
-            
-            
-        
-
+              
         }
     }
 
