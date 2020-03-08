@@ -41,11 +41,36 @@ page 51144 "Item User Group"
 
     actions
     {
-        area(Processing)
+
+        area(Navigation)
         {
-            action(ActionName)
+            action("User group Items")
+            {
+
+                ApplicationArea = All;
+                ToolTip = 'Items Connected to user Item Group';
+                Image = Group;
+                //RunObject = page "Item User Group";
+                //RunPageLink = "User Group" = FIELD("User Group");
+
+                trigger OnAction()
+                var
+                    ItemUserGroup: record "Item User Group";
+                begin
+                    ItemUserGroup.SETRANGE("User Group", Rec."User Group");
+                    if ItemUserGroup.findset then begin
+                        IF Page.RUNMODAL(Page::"Item User Group", ItemUserGroup) = ACTION::LookupOK THEN;
+                    end;
+                end;
+
+            }
+            action("User group Contacts")
             {
                 ApplicationArea = All;
+                ToolTip = 'Contacts Connected to user Item Group';
+                Image = Group;
+                RunObject = page "Contact list";
+                RunPageLink = "Webshop User Group" = FIELD("User Group");
 
                 trigger OnAction()
                 begin

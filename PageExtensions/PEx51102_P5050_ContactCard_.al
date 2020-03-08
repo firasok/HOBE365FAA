@@ -35,9 +35,36 @@ pageextension 51102 HBRPContactCardExt extends "Contact Card"
                     ApplicationArea = all;
 
                 }
-                
             }
+        }
+    }
+    actions
+    {
+        addlast(processing)
+        {
+            group("User Group")
+            {
+                action("Posted Invoice Lines")
+                {
+                    Caption = 'Posted Invoice Lines';
+                    ApplicationArea = All;
+                    Enabled = Webshop;
+                    Visible = Webshop;
+                    Promoted = true;
+                    PromotedCategory = Category4;
+                    PromotedIsBig = true;
+                    PromotedOnly = true;
+                    Image = ItemGroup;
+                    ToolTip = 'Posted Invoice Lines for Webshop Contact';
+                    RunObject = page "Posted Sales Invoice Subform";
+                    RunPageLink = "Sell-to Contact No." = FIELD("No.");
 
+                    trigger OnAction()
+
+                    begin
+                    end;
+                }
+            }
         }
     }
     trigger OnAfterGetRecord()

@@ -938,6 +938,16 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Item User Group - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 3553879277 - Action 1611148220 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Items Connected to user Item Group</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Item User Group - Action User group Items - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3553879277 - Action 336618255 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Contacts Connected to user Item Group</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Item User Group - Action User group Contacts - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Table 1210651842 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Webshop Integration Log</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -7107,6 +7117,16 @@
           <source>Integration</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension HBRPContactCardExt - Control Integration - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2472213455 - Action 1780745815 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3542408424">
+          <source>Posted Invoice Lines</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension HBRPContactCardExt - Action Posted Invoice Lines - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2472213455 - Action 1780745815 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3542408424">
+          <source>Posted Invoice Lines for Webshop Contact</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension HBRPContactCardExt - Action Posted Invoice Lines - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="PageExtension 4107215964 - Control 2782249122 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1434786627">
           <source>Integration</source>
