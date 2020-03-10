@@ -438,7 +438,8 @@ codeunit 51101 "HBR Integration Managment"
         salesHeader.Validate(salesHeader."External Document No.", IntegrationHeader."No.");
         salesHeader.Modify(true);
         IF DELCHR(IntegrationHeader."Reference Remarks", '<>', ' ') <> '' THEN;
-        "line No." := InsertCommentLine(IntegrationHeader, SalesHeader, errorCounter);
+        //line No." := InsertCommentLine(IntegrationHeader, SalesHeader, errorCounter);
+        InsertSalesCommentLine(IntegrationHeader, salesHeader, IntegrationHeader."Reference Remarks", false);
         errorCounter := errorCounter + InsertWeborderLine(IntegrationHeader, salesHeader, "Line No.");
         exit(errorCounter);
     end;
@@ -494,6 +495,55 @@ codeunit 51101 "HBR Integration Managment"
             Salesline.modify(TRUE);
         UNTIL integrationLine.NEXT = 0;
         exit("Line No.");
+    end;
+
+    procedure InsertSalesCommentLine(var pIntegrationHeader: Record "Integration Header"; var pSalesHeader: Record "Sales Header"; CommentLine: text[80]; RefrenceOnly: Boolean)
+    var
+        IntegrationHeader: Record "Integration Header";
+        IntCommLine: Record "Integration Comment Line";
+        salesHeader: Record "Sales Header";
+        SalesCommentLine: Record "Sales Comment Line";
+        LineNo: Integer;
+
+    begin
+        salesHeader := pSalesHeader;
+        IntegrationHeader := pIntegrationHeader;
+        if SalesCommentLine.FindLast then
+            LineNo := SalesCommentLine."Line No."
+        else
+            LineNo := 10000;
+        if RefrenceOnly then begin
+            SalesCommentLine.validate("Document Type", salesHeader."Document Type");
+            SalesCommentLine.validate("No.", salesHeader."No.");
+            LineNo += 10000;
+            SalesCommentLine."Line No." := LineNo;
+            SalesCommentLine.Date := WorkDate;
+            SalesCommentLine.Comment := CommentLine;
+            SalesCommentLine.insert;
+        end else begin
+
+            if (CommentLine <> '') then begin
+                SalesCommentLine.validate("Document Type", salesHeader."Document Type");
+                SalesCommentLine.validate("No.", salesHeader."No.");
+                LineNo += 10000;
+                SalesCommentLine."Line No." := LineNo;
+                SalesCommentLine.Date := WorkDate;
+                SalesCommentLine.Comment := CommentLine;
+                SalesCommentLine.insert;
+            end;
+            
+            IntCommLine.SetRange("Document No.", IntegrationHeader."No.");
+            if IntCommLine.findset then
+                repeat
+                    SalesCommentLine.validate("Document Type", salesHeader."Document Type");
+                    SalesCommentLine.validate("No.", salesHeader."No.");
+                    LineNo += 10000;
+                    SalesCommentLine."Line No." := LineNo;
+                    SalesCommentLine.Date := WorkDate;
+                    SalesCommentLine.Comment := CommentLine;
+                    SalesCommentLine.insert;
+                until IntCommLine.Next = 0;
+        end;
     end;
 
     procedure CheckIntegrationInfo(var pIntegrationHeader: Record "Integration Header")

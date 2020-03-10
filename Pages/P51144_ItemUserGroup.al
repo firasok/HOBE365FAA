@@ -20,7 +20,6 @@ page 51144 "Item User Group"
                     ApplicationArea = all;
                     Visible = false;
                     Editable = false;
-
                 }
 
                 field("User Group"; "User Group")
@@ -50,8 +49,8 @@ page 51144 "Item User Group"
                 ApplicationArea = All;
                 ToolTip = 'Items Connected to user Item Group';
                 Image = Group;
-                //RunObject = page "Item User Group";
-                //RunPageLink = "User Group" = FIELD("User Group");
+                /* RunObject = page "Item User Group";
+                RunPageLink = "User Group" = FIELD("User Group"); */
 
                 trigger OnAction()
                 var
@@ -62,8 +61,8 @@ page 51144 "Item User Group"
                         IF Page.RUNMODAL(Page::"Item User Group", ItemUserGroup) = ACTION::LookupOK THEN;
                     end;
                 end;
-
             }
+
             action("User group Contacts")
             {
                 ApplicationArea = All;
