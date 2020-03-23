@@ -377,7 +377,7 @@ codeunit 51101 "HBR Integration Managment"
                             if (not unitOfMeasureRec.Get(integrationLine."Unit of Measure")) then begin
                                 processLogManagmnent.InsertProcessLogLine(StrSubstNo(Text001, integrationLine."Line No.", IntegrationHeader."No."), logNo);
                                 erroBool := true;
-                                errorCounter += 1
+                                errorCounter += 1;
                             end;
 
                             if integrationLine.Amount = 0 then begin
