@@ -11,7 +11,7 @@ table 51104 "Integration Setup"
         field(10; "Application Area"; Option)
         {
             Caption = 'Application Area';
-            OptionMembers = " ",ABAafgift,ABAopret,Blindalarm,UrsFrbMat,AIAUdrykning,Planorama,Webshop;
+            OptionMembers = ,ABAafgift,ABAopret,Blindalarm,UrsFrbMat,AIAUdrykning,Planorama,Webshop;
             OptionCaption = ' ,ABAafgift,ABAopret,Blindalarm,UrsFrbMat,AIAUdrykning,Planorama,Webshop';
         }
 
@@ -53,7 +53,7 @@ table 51104 "Integration Setup"
 
         field(60; "Global Dimension 1 Code"; Code[20])
         {
-            TableRelation = "Dimension Value" where("Dimension Code" = FILTER(1));
+            TableRelation = "Dimension Value".Code where("Global Dimension No." = FILTER(1), Blocked = const(false));
             Caption = 'Global Dimension 1 Code';
             CaptionClass = '1,1,1';
             DataClassification = ToBeClassified;
@@ -62,7 +62,7 @@ table 51104 "Integration Setup"
         field(65; "Global Dimension 2 Code"; Code[20])
         {
             Caption = 'Global Dimension 2 Code';
-            TableRelation = "Dimension Value" where("Dimension Code" = FILTER(2));
+            TableRelation = "Dimension Value".Code where("Global Dimension No." = FILTER(2), Blocked = const(false));
             CaptionClass = '1,1,2';
             DataClassification = ToBeClassified;
         }
@@ -84,7 +84,8 @@ table 51104 "Integration Setup"
             Caption = 'Quantity to invoice';
             FieldClass = FlowField;
             BlankZero = true;
-            CalcFormula = Count ("Integration Header" WHERE("Application Area" = FIELD("Application Area"), Processed = const(false), Status = const(Inserted)));
+            CalcFormula = Count ("Integration Header" WHERE("Application Area" = FIELD("Application Area"),
+            Processed = const(false), Status = filter(Inserted | Error)));
         }
 
         field(100; "Amount to invoice"; Decimal)
@@ -92,7 +93,7 @@ table 51104 "Integration Setup"
             Caption = 'Amount to invoice';
             FieldClass = FlowField;
             BlankZero = true;
-            CalcFormula = Sum ("Integration Header".Amount WHERE("Application Area" = FIELD("Application Area"), Processed = CONST(false), Status = const(Inserted)));
+            CalcFormula = Sum ("Integration Header".Amount WHERE("Application Area" = FIELD("Application Area"), Processed = CONST(false)));
 
         }
 
@@ -128,15 +129,15 @@ table 51104 "Integration Setup"
 
         field(140; "Ext. Cust. Price Grp."; Code[10])
         {
-            Caption = 'EXT. Cust. Price Grp.';
-            TableRelation = "Customer Price Group";
+            Caption = 'EXT. Cust. Posting Grp.';
+            TableRelation = "Customer Posting Group";
             DataClassification = ToBeClassified;
         }
 
         field(150; "EK Cust. Price Grp."; Code[10])
         {
-            Caption = 'EK. Cust. Price Grp.';
-            TableRelation = "Customer Price Group";
+            Caption = 'EK. Cust. Posting Grp.';
+            TableRelation = "Customer Posting Group";
             DataClassification = ToBeClassified;
         }
 
@@ -170,6 +171,27 @@ table 51104 "Integration Setup"
         {
             Caption = 'Text Unit Of Measure';
             TableRelation = "Unit of Measure";
+            DataClassification = ToBeClassified;
+        }
+
+        field(200; "External Deb. Posting Grp."; Code[20])
+        {
+            Caption = 'External Deb. Posting Grp.';
+            TableRelation = "Customer Posting Group";
+            DataClassification = ToBeClassified;
+        }
+
+        field(210; "External EK Deb. Posting Grp."; Code[20])
+        {
+            Caption = 'External EK Deb. Posting Grp.';
+            TableRelation = "Customer Posting Group";
+            DataClassification = ToBeClassified;
+        }
+
+        field(220; "Domistic Deb. Posting Grp."; Code[20])
+        {
+            Caption = 'Domistic Deb. Posting Grp.';
+            TableRelation = "Customer Posting Group";
             DataClassification = ToBeClassified;
         }
     }

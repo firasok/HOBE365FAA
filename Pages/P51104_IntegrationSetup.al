@@ -30,11 +30,13 @@ page 51104 "Integration Setup"
                 }
                 field("G/L Account External"; "G/L Account External")
                 {
+                    Visible = false;
                     ApplicationArea = all;
 
                 }
                 field("VAT  G/L Account Ext."; "VAT  G/L Account Ext.")
                 {
+                    Visible = false;
                     ApplicationArea = all;
 
                 }
@@ -83,24 +85,28 @@ page 51104 "Integration Setup"
                 }
                 field("Gen. Prod. Posting Group"; "Gen. Prod. Posting Group")
                 {
+                    Visible = false;
                     ApplicationArea = all;
 
                 }
 
                 field("Int. Cust. Price Grp."; "Int. Cust. Price Grp.")
                 {
+                    Visible = false;
                     ApplicationArea = all;
 
                 }
 
                 field("Ext. Cust. Price Grp."; "Ext. Cust. Price Grp.")
                 {
+                    Visible = false;
                     ApplicationArea = all;
 
                 }
 
                 field("EK Cust. Price Grp."; "EK Cust. Price Grp.")
                 {
+                    Visible = false;
                     ApplicationArea = all;
 
                 }
@@ -129,6 +135,24 @@ page 51104 "Integration Setup"
                 }
 
                 field("Unit Of Measure"; "Unit Of Measure")
+                {
+                    ApplicationArea = all;
+
+                }
+
+                field("External Deb. Posting Grp."; "External Deb. Posting Grp.")
+                {
+                    ApplicationArea = all;
+
+                }
+
+                field("External EK Deb. Posting Grp."; "External EK Deb. Posting Grp.")
+                {
+                    ApplicationArea = all;
+
+                }
+
+                field("Domistic Deb. Posting Grp."; "Domistic Deb. Posting Grp.")
                 {
                     ApplicationArea = all;
 

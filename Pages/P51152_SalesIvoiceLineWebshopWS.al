@@ -39,6 +39,12 @@ page 51152 "Sales Invoice Line WS"
                 {
                     ApplicationArea = all;
                 }
+
+                field("Variant Code"; "Variant Code")
+                {
+                    ApplicationArea = all;
+                }
+
                 field(Quantity; Quantity)
                 {
                     ApplicationArea = all;

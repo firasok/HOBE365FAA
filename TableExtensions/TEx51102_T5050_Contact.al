@@ -11,7 +11,7 @@ tableextension 51102 HBRContact extends "Contact"
                 CustomerNo: code[20];
                 CustomerRec: Record Customer;
                 WebshopValidate: Boolean;
-
+                
             begin
                 WebshopValidate := true;
                 if rec.Webshop <> xRec.Webshop then begin

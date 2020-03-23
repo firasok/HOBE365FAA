@@ -6,7 +6,7 @@ page 51106 "Process Log Lines"
     UsageCategory = Administration;
     SourceTable = "Process Log Line";
     Editable = false;
-    
+
     layout
     {
         area(Content)
@@ -16,7 +16,7 @@ page 51106 "Process Log Lines"
                 field("Log No."; "Log No.")
                 {
                     ApplicationArea = all;
-                }               
+                }
                 field(Description; Description)
                 {
                     ApplicationArea = all;
@@ -24,6 +24,7 @@ page 51106 "Process Log Lines"
                 field("Description 2"; "Description 2")
                 {
                     ApplicationArea = all;
+                    Visible = false;
                 }
 
             }

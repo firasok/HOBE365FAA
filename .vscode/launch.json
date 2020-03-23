@@ -102,21 +102,22 @@
             "enableSqlInformationDebugger": true,
             "port": 7349
         },
-        {
+        /* {
         
             "type": "al",
             "request": "launch",
-            "name": "DEV",
-            "server": "http://localhost",
-            "serverInstance": "DEVBC15",
+            "name": "PROD",
+            "server": "http://192.168.100.1/",
+            "serverInstance": "HBRPRODBC15",
             "authentication": "Windows",
             "breakOnError": true,
             "launchBrowser": true,
             "enableLongRunningSqlStatements": true,
             "enableSqlInformationDebugger": true,
-            "port": 7349,
+            "port": 8082,
             "schemaUpdateMode": "Synchronize"
         
         } 
+ */      
     ]
 }

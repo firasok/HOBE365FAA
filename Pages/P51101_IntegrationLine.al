@@ -1,4 +1,4 @@
-// Welcome to HBR Integration tabels Extention
+//HBR Integration tabels Extention
 
 
 
@@ -19,12 +19,11 @@ page 51101 "Integration Line List"
             {
                 field("Document Type"; "Document Type")
                 {
-                    Visible = true;
+                    Visible = false;
                 }
                 field("Application Area"; "Application Area")
                 {
-                    Visible = true;
-
+                    Visible = false;
                 }
                 field("Document No."; "Document No.")
                 {
@@ -32,7 +31,7 @@ page 51101 "Integration Line List"
                 }
                 field("Line No."; "Line No.")
                 {
-                    Visible = true;
+                    Visible = false;
                 }
                 field(Description; Description)
                 {
@@ -40,11 +39,7 @@ page 51101 "Integration Line List"
                 }
                 field("Description 2"; "Description 2")
                 {
-
-                }
-                field("Unit of Measure"; "Unit of Measure")
-                {
-
+                    Visible = false;
                 }
                 field(Quantity; Quantity)
                 {
@@ -54,16 +49,18 @@ page 51101 "Integration Line List"
                 {
                     BlankZero = True;
                 }
-                field("Line Reference"; "Line Reference")
+                field("Unit of Measure"; "Unit of Measure")
                 {
 
+                }
+                field("Line Reference"; "Line Reference")
+                {
 
                 }
                 field("School Course"; "School Course")
                 {
 
                 }
-
 
             }
         }

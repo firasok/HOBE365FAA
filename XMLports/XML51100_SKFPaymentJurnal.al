@@ -51,7 +51,10 @@ xmlport 51100 "SKF Payment journal"
                     lText000: Label 'Invoice No.:';
 
                 begin
-                        
+                    SkipCount += 1;
+                    if SkipCount = 1 then
+                        currXMLport.Skip();
+
                     IF DELCHR(UPPERCASE(VATVar), '<>', ' ') = 'JA' THEN
                         currXMLport.SKIP;
                     GenJournalLine.RESET;
@@ -78,8 +81,8 @@ xmlport 51100 "SKF Payment journal"
                         EVALUATE(amountDecemal, amountVar);
 
                     amountDecemal := ((amountDecemal + ((amountDecemal * 25) / 100) * -1));
-                    GenJournalLine.VALIDATE(Amount, amountDecemal);
                     GenJournalLine.VALIDATE(Quantity, 1);
+                    GenJournalLine.VALIDATE(Amount, amountDecemal);
                     IF contraAccountType = contraAccountType::Bank THEN
                         GenJournalLine."Bal. Account Type" := GenJournalLine."Bal. Account Type"::"Bank Account"
                     ELSE
@@ -118,7 +121,7 @@ xmlport 51100 "SKF Payment journal"
 
                     field(JournalBatch; JournalBatch)
                     {
-                        Caption = 'Journal Batch';
+                        Caption = 'Journal Batch Name';
                         ApplicationArea = all;
                         trigger OnLookup(var Text: Text): Boolean
                         var
@@ -200,8 +203,9 @@ xmlport 51100 "SKF Payment journal"
                     }
                     field(fileName; fileName)
                     {
-                        Caption = 'file Name';
+                        Caption = 'File Name';
                         ApplicationArea = all;
+                        Visible = false;
                         trigger OnLookup(var Text: Text): Boolean
                         var
                             lText000: Label 'Upload .csv file';
@@ -228,7 +232,7 @@ xmlport 51100 "SKF Payment journal"
         }
         trigger OnClosePage()
         var
-            lText000: Label 'Journal Type Name  and Posting date cannot be empty';
+            lText000: Label 'Journal Batch Name  and Posting date cannot be empty';
 
         begin
             IF (journalBatch = '') OR (postingDate = 0D) THEN
@@ -259,6 +263,7 @@ xmlport 51100 "SKF Payment journal"
         JournalBatch: Code[20];
         FileNam: Text[250];
         lineNo: Integer;
+        SkipCount: Integer;
         contraAccountType: Option ,Bank,Finans;
         contraAccountNo: code[20];
         amountDecemal: Decimal;

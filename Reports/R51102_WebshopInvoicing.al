@@ -28,6 +28,9 @@ report 51102 "Webshop Invoicing"
             trigger OnAfterGetRecord()
             Var
             begin
+                if "Integration Header".Status = "Integration Header".Status::Error then
+                    CurrReport.Skip();
+                    
                 lCounter += 1;
                 Window.UPDATE(1, "Integration Header"."No.");
                 errorCounter := errorCounter + HBRIntManagment.CreateWeborderHeader("Integration Header", PostingDate);

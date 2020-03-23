@@ -28,7 +28,9 @@ codeunit 51103 INTEventFunctions
 
     begin
         if SalesHeader.Webshop then begin
-            HBRIntegrationManagment.WebshopIntegrationLog(IntegrationTable::WebOrder, SalesHeader."External Document No.", SalesHeader."No.", IntegrationAction::FullyInvoiced);
+            SalesHeader.CalcFields("Completely Shipped");
+            if SalesHeader."Completely Shipped" then
+                HBRIntegrationManagment.WebshopIntegrationLog(IntegrationTable::WebOrder, SalesHeader."External Document No.", SalesHeader."No.", IntegrationAction::FullyInvoiced);
         end;
     end;
 

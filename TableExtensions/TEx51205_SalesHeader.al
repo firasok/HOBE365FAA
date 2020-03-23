@@ -39,7 +39,7 @@ tableextension 51205 "HBR Sales Header" extends "Sales Header"
         HBRIntegrationManagment: Codeunit "HBR Integration Managment";
         IntegrationTable: Option Customer,Contact,UserGroup,Item,WebOrder;
         IntegrationAction: option Create,Update,Delete,FullyInvoiced;
-    //<<HBR-FAA
+        //<<HBR-FAA
 
     begin
         SalesLine.SetRange("Document Type", SalesLine."Document Type"::Invoice);
@@ -56,39 +56,10 @@ tableextension 51205 "HBR Sales Header" extends "Sales Header"
             until SalesLine.Next() = 0;
 
         //>>HBR-FAA
-        //if rec."External Document No." <> '' then begin
         if rec.Webshop then begin
-            //if IntegrationHeader.get(rec."External Document No.") then begin
-            //if UpdateWebshopLog(Rec) then
-            //HBRIntegrationManagment.WebshopIntegrationLog(IntegrationTable::WebOrder, rec."External Document No.", Rec."No.", IntegrationAction::FullyInvoiced)
-            //else
             HBRIntegrationManagment.WebshopIntegrationLog(IntegrationTable::WebOrder, rec."External Document No.", Rec."No.", IntegrationAction::Delete)
         end;
-    end;
-    //<<HBR-FAA
-    //end;
-
-    procedure UpdateWebshopLog(pSalesHeader: Record "Sales Header"): Boolean
-    var
-
-        SalesHeader: Record "Sales Header";
-        SalesLine: Record "Sales Line";
-        fullInvoiced: Boolean;
-    begin
-        fullInvoiced := true;
-        SalesHeader := pSalesHeader;
-        SalesLine.Reset();
-        SalesLine.SetRange("Document Type", "Document Type"::Order);
-        SalesLine.SetRange("Document No.", SalesHeader."No.");
-        if SalesLine.FindSet() then
-            repeat
-                if SalesLine."Quantity Shipped" <> SalesLine."Quantity Invoiced" then begin
-                    fullInvoiced := false;
-                    exit(fullInvoiced)
-                end;
-            until SalesLine.next = 0;
-        exit(fullInvoiced);
-
+        //<<HBR-FAA
     end;
 
 }

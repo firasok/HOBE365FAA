@@ -24,11 +24,13 @@ page 51108 "Integration Overview"
                     field("Aplication Area"; "Application Area")
                     {
                         ApplicationArea = all;
+                        Visible = false;
                         Editable = false;
                     }
                     field("Document Type"; "Document Type")
                     {
                         ApplicationArea = all;
+                        Visible = false;
                         Editable = false;
                     }
                     field("Customer No"; "Customer No.")
@@ -44,6 +46,7 @@ page 51108 "Integration Overview"
                     field("Name 2"; "Name 2")
                     {
                         ApplicationArea = all;
+                        Visible = false;
                         Editable = false;
                     }
                     field(Adresse; Address)
@@ -53,15 +56,8 @@ page 51108 "Integration Overview"
                     }
                     field("Adresse 2"; "Address 2")
                     {
-                    }
-                    field("Your Refrence"; "Your Reference")
-                    {
                         ApplicationArea = all;
-                        Editable = false;
-                    }
-                    field("Our Refrence"; "Our Reference")
-                    {
-                        ApplicationArea = all;
+                        Visible = false;
                         Editable = false;
                     }
                     field(Amount; Amount)
@@ -73,6 +69,7 @@ page 51108 "Integration Overview"
                     field("Source Code"; "Source Code")
                     {
                         ApplicationArea = all;
+                        Visible = false;
                         Editable = false;
                     }
                     field("External Invoice No"; "External Invoice No")
@@ -81,6 +78,16 @@ page 51108 "Integration Overview"
                         Editable = false;
                     }
                     field(Description; Description)
+                    {
+                        ApplicationArea = all;
+                        Editable = false;
+                    }
+                    field("Your Refrence"; "Your Reference")
+                    {
+                        ApplicationArea = all;
+                        Editable = false;
+                    }
+                    field("Our Refrence"; "Our Reference")
                     {
                         ApplicationArea = all;
                         Editable = false;
@@ -98,16 +105,19 @@ page 51108 "Integration Overview"
                     field("Time of Creation"; "Time of Creation")
                     {
                         ApplicationArea = all;
+                        Visible = FALSE;
                         Editable = false;
                     }
                     field("Date Of Proces"; "Date Of Proces")
                     {
                         ApplicationArea = all;
+                        Visible = false;
                         Editable = false;
                     }
                     field(Processed; Processed)
                     {
                         ApplicationArea = all;
+                        Visible = false;
                         Editable = false;
                     }
                     field(Status; Status)
@@ -143,7 +153,7 @@ page 51108 "Integration Overview"
         area(navigation)
         {
             action("Show&Process Log")
-            {                
+            {
                 Caption = 'Show &Process Log';
                 Image = GetLines;
                 trigger OnAction()

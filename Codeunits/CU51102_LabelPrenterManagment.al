@@ -19,24 +19,93 @@ codeunit 51102 "Label Printer Managment"
     pDescription: Text[50];
     pVarientCode: code[20];
     pLabelCount: Integer;
-    PrinterNo: Option SVNAVLA3,SVNAVLA4,SVNAVLA6,SVNAVLA9,SVNAVLA10,SVNAVLA11,SVNAVLA12)
+    PrinterNo: Option SVNAVLA3,SVNAVLA4,SVNAVLA6,SVNAVLA9,SVNAVLA10,SVNAVLA11,SVNAVLA12;
+    pAllVarients: Boolean)
     var
         labelCount: Integer;
-        itemRec: Record item;
-        itemVariant: Record "Item Variant";
         ItemNo: code[20];
         VarientCode: code[20];
         i: Integer;
+        AllVarients: Boolean;
+
+    begin
+
+        if not HBRsetup.get then HBRsetup.init;
+        PrintLabel(PrinterNo);
+        if (labelCount = 0) then labelCount := 1;
+
+        //Process
+        PrintDocument(clientFileName, labelCount);
+        /* REM--only online BC not valid OnPrem--------- 
+        LabelFileClose();
+        -----------------------------------------------*/
+    end;
+
+    procedure LabelFileClose()
+    var
+    begin
+        fileManagment.DeleteServerFile(servierFileName);
+        fileManagment.DeleteClientFile(clientFileName);
+    end;
+
+    
+
+    procedure LabelInitializer()
+    var
+    begin
+        Special2[1] := 2;
+        Special66[1] := 66;
+        CR[1] := 13;
+        clientFileName := 'label.prn';
+        labelCounter := 1;
+        labelCreated := FALSE;
+    end;
+
+    LOCAL procedure PrintDocument(Path: Text;
+    pNoOfLabels: integer)
+    var
+        NoOfLabels: Integer;
+        i: Integer;
+    begin
+        NoOfLabels := pNoOfLabels;
+        Process := Process.Process;
+        Process.StartInfo.UseShellExecute := FALSE;
+        Process.StartInfo.FileName := 'cmd.exe';
+        Process.StartInfo.Arguments := STRSUBSTNO('/c type %1 > ' + selectedPrinter, Path);
+        Process.StartInfo.CreateNoWindow := TRUE;
+        for i := 1 to NoOfLabels do Process.Start();
+        CLEAR(Process);
+    end;
+
+    procedure PrintBarcode(pItemNo: code[20]; pVarientCode: code[20]; plabelCount: Integer; pAllVarients: Boolean)
+    var
+        itemRec: Record item;
+        itemVariant: Record "Item Variant";
+        labelCount: Integer;
+        AllVarients: Boolean;
+        ItemNo: code[20];
+        VarientCode: code[20];
+        i: Integer;
+
         Text001: Label 'Item No.: ';
-        Text002: Label 'placeringnr.: ';
+        Text002: Label 'Shelf: ';
         Test003: Label 'Size: ';
     begin
         ItemNo := pItemNo;
         VarientCode := pVarientCode;
         labelCount := pLabelCount;
+        AllVarients := pAllVarients;
+        labelCount := plabelCount;
+
         if pItemNo <> '' then begin
             itemRec.get(ItemNo);
-            if VarientCode <> '' then begin
+           if AllVarients then begin
+               itemVariant.SetRange("Item No.",itemRec."No.");
+               if itemVariant.findset then repeat
+               until itemVariant.next = 0; 
+           end; 
+
+            if (VarientCode <> '') then begin
                 if itemVariant.get(itemRec."No.", VarientCode) then
                     variantText := Test003 + itemVariant.Code
                 ELSE
@@ -45,9 +114,6 @@ codeunit 51102 "Label Printer Managment"
         end
         else
             exit;
-        if not HBRsetup.get then HBRsetup.init;
-        PrintLabel(PrinterNo);
-        if (labelCount = 0) then labelCount := 1;
         FOR i := 1 TO labelCount DO BEGIN
             LabelCreated := TRUE;
             HBRsetup.testfield("File Name");
@@ -67,24 +133,13 @@ codeunit 51102 "Label Printer Managment"
             fileManagment.BLOBExportToServerFile(tmpBlob, servierFileName);
             fileManagment.CopyServerFile(servierFileName, clientFileName, true);
         End;
-        //Process
-        PrintDocument(clientFileName, labelCount);
-        /* REM--only online BC not valid OnPrem--------- 
-        LabelFileClose();
-        -----------------------------------------------*/
-    end;
-
-    procedure LabelFileClose()
-    var
-    begin
-        fileManagment.DeleteServerFile(servierFileName);
-        fileManagment.DeleteClientFile(clientFileName);
     end;
 
     procedure PrintLabel(PrinterNo: Option SVNAVLA3,SVNAVLA4,SVNAVLA6,SVNAVLA9,SVNAVLA10,SVNAVLA11,SVNAVLA12)
     var
     begin
-        CASE PrinterNo OF //PrinterNo::SVNAVLA3:
+        CASE PrinterNo OF 
+        //PrinterNo::SVNAVLA3:
             1:
                 BEGIN
                     HBRsetup.TESTFIELD("Label Printer 1");
@@ -156,33 +211,6 @@ codeunit 51102 "Label Printer Managment"
                     selectedPrinter := HBRsetup."Label Printer 12";
                 END;
         END;
-    end;
-
-    procedure LabelInitializer()
-    var
-    begin
-        Special2[1] := 2;
-        Special66[1] := 66;
-        CR[1] := 13;
-        clientFileName := 'label.prn';
-        labelCounter := 1;
-        labelCreated := FALSE;
-    end;
-
-    LOCAL procedure PrintDocument(Path: Text;
-    pNoOfLabels: integer)
-    var
-        NoOfLabels: Integer;
-        i: Integer;
-    begin
-        NoOfLabels := pNoOfLabels;
-        Process := Process.Process;
-        Process.StartInfo.UseShellExecute := FALSE;
-        Process.StartInfo.FileName := 'cmd.exe';
-        Process.StartInfo.Arguments := STRSUBSTNO('/c type %1 > ' + selectedPrinter, Path);
-        Process.StartInfo.CreateNoWindow := TRUE;
-        for i := 1 to NoOfLabels do Process.Start();
-        CLEAR(Process);
     end;
 
     var

@@ -584,12 +584,12 @@
           <note from="Xliff Generator" annotates="general" priority="3">Table Integration Setup - Field Int. Cust. Price Grp. - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 1237520843 - Field 2802360426 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>EXT. Cust. Price Grp.</source>
+          <source>EXT. Cust. Posting Grp.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Integration Setup - Field Ext. Cust. Price Grp. - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 1237520843 - Field 2219940129 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>EK. Cust. Price Grp.</source>
+          <source>EK. Cust. Posting Grp.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Integration Setup - Field EK Cust. Price Grp. - Property Caption</note>
         </trans-unit>
@@ -617,6 +617,21 @@
           <source>Text Unit Of Measure</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Integration Setup - Field Unit Of Measure - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1237520843 - Field 2427200997 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>External Deb. Posting Grp.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Integration Setup - Field External Deb. Posting Grp. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1237520843 - Field 2691040079 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>External EK Deb. Posting Grp.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Integration Setup - Field External EK Deb. Posting Grp. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1237520843 - Field 3552971128 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Domistic Deb. Posting Grp.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Integration Setup - Field Domistic Deb. Posting Grp. - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 1237520843 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Integration Setup</source>
@@ -904,7 +919,7 @@
           <note from="Xliff Generator" annotates="general" priority="3">Table Webshop User Group - Method OnDelete - NamedType Text000</note>
         </trans-unit>
         <trans-unit id="Table 3379003342 - Method 3152277940 - NamedType 3114637384" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Deleting is overrouled</source>
+          <source>Deleting is overruled</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Webshop User Group - Method OnDelete - NamedType Text001</note>
         </trans-unit>
@@ -933,18 +948,23 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Item User Group - Field Name - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 3553879277 - Field 2842094365 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item Description</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Item User Group - Field Item Description - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Page 3553879277 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Item User Group</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Item User Group - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 3553879277 - Action 1611148220 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Items Connected to user Item Group</source>
+          <source>Items Connected to Item user Group</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Item User Group - Action User group Items - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 3553879277 - Action 336618255 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Contacts Connected to user Item Group</source>
+          <source>Contacts Connected to Item user Group</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Item User Group - Action User group Contacts - Property ToolTip</note>
         </trans-unit>
@@ -987,6 +1007,16 @@
           <source>Create,Update,Delete,FullyInvoiced</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Webshop Integration Log - Field Integration Action - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="Table 1210651842 - Field 1059534406 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Action Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Webshop Integration Log - Field Action Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1210651842 - Field 1986744133 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Action Time</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Webshop Integration Log - Field Action Time - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 1210651842 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Webshop Integration Log</source>
@@ -1268,6 +1298,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit HBR Integration Managment - Method CreateInvoiceHeader - NamedType Text001</note>
         </trans-unit>
+        <trans-unit id="Codeunit 346412068 - Method 335321606 - NamedType 3752334001" size-unit="char" translate="yes" xml:space="preserve">
+          <source>NA</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit HBR Integration Managment - Method CreateInvoiceHeader - NamedType Text002</note>
+        </trans-unit>
         <trans-unit id="Codeunit 346412068 - Method 842219852 - NamedType 3114637384" maxwidth="100" size-unit="char" translate="no" xml:space="preserve">
           <source>Årsafgift ABA anlæg</source>
           <note from="Developer" annotates="general" priority="2">Comment</note>
@@ -1288,30 +1323,55 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit HBR Integration Managment - Method checkIntegrationHeader - NamedType Text002</note>
         </trans-unit>
+        <trans-unit id="Codeunit 346412068 - Method 3075023185 - NamedType 95063322" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Contact No.:  %1 dose not belong to Customer No.: %2 on integration Setup. Integraion Header No.: %3 .</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit HBR Integration Managment - Method checkIntegrationHeader - NamedType Text003</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 346412068 - Method 3075023185 - NamedType 732759939" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Contact No.:  %1 dose not exist OR empty. Integraion Header No.: %2</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit HBR Integration Managment - Method checkIntegrationHeader - NamedType Text004</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 346412068 - Method 3075023185 - NamedType 1370456556" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Our Reference field must not exceed 20 characters, Integraion Header No.: %1</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit HBR Integration Managment - Method checkIntegrationHeader - NamedType Text005</note>
+        </trans-unit>
         <trans-unit id="Codeunit 346412068 - Method 1022175338 - NamedType 2476940767" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Unit of Measure field cannot be empty line No. %1.</source>
+          <source>Unit of Measure field cannot be empty line No. %1. Integrtion Hrader: %2</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit HBR Integration Managment - Method checkIntegrationLine - NamedType Text000</note>
         </trans-unit>
         <trans-unit id="Codeunit 346412068 - Method 1022175338 - NamedType 3114637384" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Error Unit of Measure  %1 line No.%2.</source>
+          <source>Error Unit of Measure  %1 line No.%2. Integration Header %3</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit HBR Integration Managment - Method checkIntegrationLine - NamedType Text001</note>
         </trans-unit>
         <trans-unit id="Codeunit 346412068 - Method 1022175338 - NamedType 3752334001" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Error Item No.  %1 line No.%2. is not exist</source>
+          <source>Error Item No.  %1 line No.%2 Weborder No. %3. not exist</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit HBR Integration Managment - Method checkIntegrationLine - NamedType Text002</note>
         </trans-unit>
         <trans-unit id="Codeunit 346412068 - Method 1022175338 - NamedType 95063322" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Error Item No.  %1 line No.%2. is Blocked</source>
+          <source>Error Item No.  %1 line No.%2. Weborder No. %3 is Blocked</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit HBR Integration Managment - Method checkIntegrationLine - NamedType Text003</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 346412068 - Method 1022175338 - NamedType 732759939" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Error: Not a valid Amount value, line No.%1. Weborder No. %2</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit HBR Integration Managment - Method checkIntegrationLine - NamedType Text004</note>
         </trans-unit>
         <trans-unit id="Codeunit 346412068 - Method 697869127 - NamedType 2476940767" size-unit="char" translate="yes" xml:space="preserve">
           <source>Error log %1</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit HBR Integration Managment - Method CreateWeborderHeader - NamedType Text000</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 346412068 - Method 697869127 - NamedType 2951775720" size-unit="char" translate="yes" xml:space="preserve">
+          <source>NA</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit HBR Integration Managment - Method CreateWeborderHeader - NamedType text001</note>
         </trans-unit>
         <trans-unit id="Codeunit 346412068 - Method 3112460553 - NamedType 3114637384" size-unit="char" translate="yes" xml:space="preserve">
           <source>Web Order</source>
@@ -1349,7 +1409,7 @@
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit HBR Integration Managment - Method CheckWebshopInfo - NamedType Text001</note>
         </trans-unit>
         <trans-unit id="Codeunit 346412068 - Method 2371993968 - NamedType 3752334001" size-unit="char" translate="yes" xml:space="preserve">
-          <source>The Job Ended with No error</source>
+          <source>The Job CreateInvoiceHeaderEnded with No error</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit HBR Integration Managment - Method CheckWebshopInfo - NamedType Text002</note>
         </trans-unit>
@@ -1358,20 +1418,20 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit HBR Integration Managment - Method CheckWebshopInfo - NamedType Text003</note>
         </trans-unit>
-        <trans-unit id="Codeunit 677641258 - Method 3390164393 - NamedType 3114637384" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Codeunit 677641258 - Method 1647656935 - NamedType 3114637384" size-unit="char" translate="yes" xml:space="preserve">
           <source>Item No.: </source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Label Printer Managment - Method LabelItemBarcode - NamedType Text001</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Label Printer Managment - Method PrintBarcode - NamedType Text001</note>
         </trans-unit>
-        <trans-unit id="Codeunit 677641258 - Method 3390164393 - NamedType 3752334001" size-unit="char" translate="yes" xml:space="preserve">
-          <source>placeringnr.: </source>
+        <trans-unit id="Codeunit 677641258 - Method 1647656935 - NamedType 3752334001" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Shelf: </source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Label Printer Managment - Method LabelItemBarcode - NamedType Text002</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Label Printer Managment - Method PrintBarcode - NamedType Text002</note>
         </trans-unit>
-        <trans-unit id="Codeunit 677641258 - Method 3390164393 - NamedType 4094255431" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Codeunit 677641258 - Method 1647656935 - NamedType 4094255431" size-unit="char" translate="yes" xml:space="preserve">
           <source>Size: </source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Label Printer Managment - Method LabelItemBarcode - NamedType Test003</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Label Printer Managment - Method PrintBarcode - NamedType Test003</note>
         </trans-unit>
         <trans-unit id="Codeunit 2200102716 - NamedType 3974808153" size-unit="char" translate="yes" xml:space="preserve">
           <source>User with Windows Security ID no. %1 not found</source>
@@ -5368,6 +5428,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report Print Label - Control VariantCode - Property caption</note>
         </trans-unit>
+        <trans-unit id="Report 3234235265 - Control 3546637627 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Number of labels</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Print Label - Control AllVarients - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Report 3234235265 - Control 825167671 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Number of labels</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -7024,7 +7089,7 @@
           <note from="Xliff Generator" annotates="general" priority="3">XmlPort SKF Payment journal - Control JourTemplate - Property Caption</note>
         </trans-unit>
         <trans-unit id="XmlPort 2723382487 - Control 1830915383 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Journal Batch</source>
+          <source>Journal Batch Name</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">XmlPort SKF Payment journal - Control JournalBatch - Property Caption</note>
         </trans-unit>
@@ -7044,7 +7109,7 @@
           <note from="Xliff Generator" annotates="general" priority="3">XmlPort SKF Payment journal - Control postingDate - Property Caption</note>
         </trans-unit>
         <trans-unit id="XmlPort 2723382487 - Control 4179522451 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>file Name</source>
+          <source>File Name</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">XmlPort SKF Payment journal - Control fileName - Property Caption</note>
         </trans-unit>
@@ -7054,7 +7119,7 @@
           <note from="Xliff Generator" annotates="general" priority="3">XmlPort SKF Payment journal - Control fileName - Method OnLookup - NamedType lText000</note>
         </trans-unit>
         <trans-unit id="XmlPort 2723382487 - RequestPage 2516438534 - Method 4128543304 - NamedType 1541774099" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Journal Type Name  and Posting date cannot be empty</source>
+          <source>Journal Batch Name  and Posting date cannot be empty</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">XmlPort SKF Payment journal - RequestPage RequestOptionsPage - Method OnClosePage - NamedType lText000</note>
         </trans-unit>
@@ -7152,6 +7217,16 @@
           <source>Reading KMD payroll file</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension HBRGeneralJournal - Action KMD Payroll - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1715001681 - Action 890393587 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2583272393">
+          <source>SKF Paymets</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension HBRGeneralJournal - Action SKF Paymets - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1715001681 - Action 890393587 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2583272393">
+          <source>Reading SKF Paymets file</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension HBRGeneralJournal - Action SKF Paymets - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="PageExtension 3866769038 - Control 3511817141 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3133908286">
           <source>Vehicle</source>

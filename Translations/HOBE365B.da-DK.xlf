@@ -4,8 +4,8 @@
     <body>
       <group id="body">
         <trans-unit id="Table 520528905 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>HBR Setup</source>
-          <target state="final">HBR opsætning</target>
+          <source>Label Printer 1</source>
+          <target state="final">Label Printer 1</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table HBR Setup - Property Caption</note>
         </trans-unit>
@@ -27,6 +27,84 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table HBR Setup - Field Vehicle No. Series - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 520528905 - Field 804481195 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>File Name</source>
+          <target>Filnavn</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table HBR Setup - Field File Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 520528905 - Field 3728355067 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Label Printer 1</source>
+          <target>Label Printer 1</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table HBR Setup - Field Label Printer 1 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 520528905 - Field 1346477622 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Label Printer 2</source>
+          <target>Label Printer 2</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table HBR Setup - Field Label Printer 2 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 520528905 - Field 708781005 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Label Printer 3</source>
+          <target>Label Printer 3</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table HBR Setup - Field Label Printer 3 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 520528905 - Field 1815265216 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Label Printer 4</source>
+          <target>Label Printer 4</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table HBR Setup - Field Label Printer 4 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 520528905 - Field 1177568599 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Label Printer 5</source>
+          <target>Label Printer 5</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table HBR Setup - Field Label Printer 5 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 520528905 - Field 3090658450 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Label Printer 6</source>
+          <target>Label Printer 6</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table HBR Setup - Field Label Printer 6 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 520528905 - Field 2452961833 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Label Printer 7</source>
+          <target>Label Printer 7</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table HBR Setup - Field Label Printer 7 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 520528905 - Field 3559446044 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Label Printer 8</source>
+          <target>Label Printer 7</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table HBR Setup - Field Label Printer 8 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 520528905 - Field 2921749427 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Label Printer 9</source>
+          <target>Label Printer 9</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table HBR Setup - Field Label Printer 9 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 520528905 - Field 2244110763 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Label Printer 10</source>
+          <target>Label Printer 10</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table HBR Setup - Field Label Printer 10 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 520528905 - Field 2881807380 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Label Printer 11</source>
+          <target>Label Printer 11</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table HBR Setup - Field Label Printer 11 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 520528905 - Field 3519503997 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Label Printer 12</source>
+          <target>Label Printer 12</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table HBR Setup - Field Label Printer 12 - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Page 520528905 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>HBR Setup</source>
           <target state="translated">HBR opsætning</target>
@@ -38,6 +116,12 @@
           <target state="translated">Køretøjsopsætning</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page HBR Setup - Control Vehicle Setup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 520528905 - Control 1461477563 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Printer Setup</source>
+          <target>Printeropsætning</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page HBR Setup - Control Printer Setup - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 2597519307 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Integration Header</source>
@@ -58,7 +142,7 @@
           <note from="Xliff Generator" annotates="general" priority="3">Table Integration Header - Field Application Area - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 2597519307 - Field 662456783 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
-          <source> ,ABAafgift,ABAopret,Blindalarm,UrsFrbMat,AIA-Udrykning,Planorama,Webshop</source>
+          <source> ,ABAafgift,ABAopret,Blindalarm,UrsFrbMat,AIAUdrykning,Planorama,Webshop</source>
           <target state="translated"> ,ABAafgift,ABAopret,Blindalarm,UrsFrbMat,AIA-Udrykning,Planorama,Webshop</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Integration Header - Field Application Area - Property OptionCaption</note>
@@ -71,7 +155,7 @@
         </trans-unit>
         <trans-unit id="Table 2597519307 - Field 2363328873 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Document Type</source>
-          <target state="needs-review-translation" state-qualifier="tm-suggestion">Dokumenttype</target>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Bilagtype</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Integration Header - Field Document Type - Property Caption</note>
         </trans-unit>
@@ -117,6 +201,18 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Integration Header - Field Address 2 - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 2597519307 - Field 202036913 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Contact No.</source>
+          <target>Contacnr.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Integration Header - Field Contact No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2597519307 - Field 2378863201 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Contact Name</source>
+          <target>Contactnavn</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Integration Header - Field Contact Name - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 2597519307 - Field 3001618318 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Your Reference</source>
           <target state="translated" state-qualifier="tm-suggestion">Deres reference</target>
@@ -143,7 +239,7 @@
         </trans-unit>
         <trans-unit id="Table 2597519307 - Field 1466462583 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>External Invoice No</source>
-          <target state="translated">Eksternt Faktura Nr.</target>
+          <target state="translated">Eksternt fakturanr.</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Integration Header - Field External Invoice No - Property Caption</note>
         </trans-unit>
@@ -209,7 +305,7 @@
         </trans-unit>
         <trans-unit id="Table 2597519307 - Field 470760352 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Sell-to-Contact No</source>
-          <target state="translated">Kundeattentionnr.</target>
+          <target state="translated">Kundenr.</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Integration Header - Field Sell-to-Contact No - Property Caption</note>
         </trans-unit>
@@ -227,13 +323,13 @@
         </trans-unit>
         <trans-unit id="Table 2578688676 - Field 2363328873 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Document Type</source>
-          <target state="needs-review-translation" state-qualifier="tm-suggestion">Dokumenttype</target>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Bilagtype</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Integration Line - Field Document Type - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 2578688676 - Field 2363328873 - Property 2589162015" size-unit="char" translate="yes" xml:space="preserve">
           <source> ,Invoice,Credit Memo</source>
-          <target state="needs-review-translation" state-qualifier="tm-suggestion">Faktura,Kreditnota</target>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion"> ,Faktura,Kreditnota</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Integration Line - Field Document Type - Property optionCaption</note>
         </trans-unit>
@@ -244,7 +340,7 @@
           <note from="Xliff Generator" annotates="general" priority="3">Table Integration Line - Field Application Area - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 2578688676 - Field 662456783 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
-          <source> ,ABAafgift,ABAopret,Blindalarm,UrsFrbMat,AIA-Udrykning,Teatervagt,Planorama,Webshop</source>
+          <source> ,ABAafgift,ABAopret,Blindalarm,UrsFrbMat,AIAUdrykning,Teatervagt,Planorama,Webshop</source>
           <target state="translated"> ,ABAafgift,ABAopret,Blindalarm,UrsFrbMat,AIA-Udrykning,Teatervagt,Planorama,Webshop</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Integration Line - Field Application Area - Property OptionCaption</note>
@@ -272,6 +368,24 @@
           <target state="final" state-qualifier="tm-suggestion">Linjenr.</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Integration Line - Field Line No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2578688676 - Field 568743302 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Line No.</source>
+          <target>Linjenr.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Integration Line - Field Item No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2578688676 - Field 1805115540 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item No. 2</source>
+          <target>Varenr. 2</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Integration Line - Field Item No. 2 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2578688676 - Field 397414134 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item Variant</source>
+          <target>Vare Variant</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Integration Line - Field Item Variant - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 2578688676 - Field 3461834954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Description</source>
@@ -311,7 +425,7 @@
         </trans-unit>
         <trans-unit id="Table 2578688676 - Field 420595507 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>School Course</source>
-          <target state="translated">Undervisningskursus</target>
+          <target state="translated">Kursus</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Integration Line - Field School Course - Property Caption</note>
         </trans-unit>
@@ -323,7 +437,7 @@
         </trans-unit>
         <trans-unit id="Table 2578688676 - Field 3475354939 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Log Time </source>
-          <target state="needs-review-translation" state-qualifier="tm-suggestion">Logtidspunkt</target>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Logtid</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Integration Line - Field Log time - Property Caption</note>
         </trans-unit>
@@ -341,13 +455,13 @@
         </trans-unit>
         <trans-unit id="Table 4010401301 - Field 2363328873 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Document Type</source>
-          <target state="needs-review-translation" state-qualifier="tm-suggestion">Dokumenttype</target>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Bilagtype</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Integration Comment Line - Field Document Type - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 4010401301 - Field 2363328873 - Property 2589162015" size-unit="char" translate="yes" xml:space="preserve">
           <source> ,Invoice,Credit Memo</source>
-          <target state="needs-review-translation" state-qualifier="tm-suggestion">Faktura,Kreditnota</target>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion"> ,Faktura,Kreditnota</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Integration Comment Line - Field Document Type - Property optionCaption</note>
         </trans-unit>
@@ -358,14 +472,14 @@
           <note from="Xliff Generator" annotates="general" priority="3">Table Integration Comment Line - Field Application Area - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 4010401301 - Field 662456783 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
-          <source> ,ABAafgift,ABAopret,Blindalarm,UrsFrbMat,AIA-Udrykning,Teatervagt,Planorama,Webshop</source>
+          <source> ,ABAafgift,ABAopret,Blindalarm,UrsFrbMat,AIAUdrykning,Teatervagt,Planorama,Webshop</source>
           <target state="translated"> ,ABAafgift,ABAopret,Blindalarm,UrsFrbMat,AIA-Udrykning,Teatervagt,Planorama,Webshop</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Integration Comment Line - Field Application Area - Property OptionCaption</note>
         </trans-unit>
         <trans-unit id="Table 4010401301 - Field 486908828 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Document No.</source>
-          <target state="needs-review-translation" state-qualifier="tm-suggestion">Dokumentnr.</target>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Bilagsnr</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Integration Comment Line - Field Document No. - Property Caption</note>
         </trans-unit>
@@ -406,7 +520,7 @@
           <note from="Xliff Generator" annotates="general" priority="3">Table Integration Comment Line - Field Comment - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 4010401301 - Field 2480638018 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Document Line No.</source>
+          <source>Line No. 2</source>
           <target state="needs-review-translation" state-qualifier="tm-suggestion">Dokumentlinjenr.</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Integration Comment Line - Field Document Line No. - Property Caption</note>
@@ -431,13 +545,13 @@
         </trans-unit>
         <trans-unit id="Table 1913167390 - Field 2363328873 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Document Type</source>
-          <target state="needs-review-translation" state-qualifier="tm-suggestion">Dokumenttype</target>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Bilagtype</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Integration Log - Field Document Type - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 1913167390 - Field 2363328873 - Property 2589162015" size-unit="char" translate="yes" xml:space="preserve">
           <source> ,Invoice,Credit Memo</source>
-          <target state="needs-review-translation" state-qualifier="tm-suggestion">Faktura,Kreditnota</target>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion"> ,Faktura,Kreditnota</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Integration Log - Field Document Type - Property optionCaption</note>
         </trans-unit>
@@ -490,7 +604,7 @@
           <note from="Xliff Generator" annotates="general" priority="3">Table Integration Setup - Field Application Area - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 1237520843 - Field 662456783 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
-          <source> ,ABAafgift,ABAopret,Blindalarm,UrsFrbMat,AIA-Udrykning,Planorama,Webshop</source>
+          <source> ,ABAafgift,ABAopret,Blindalarm,UrsFrbMat,AIAUdrykning,Planorama,Webshop</source>
           <target state="translated"> ,ABAafgift,ABAopret,Blindalarm,UrsFrbMat,AIA-Udrykning,Planorama,Webshop</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Integration Setup - Field Application Area - Property OptionCaption</note>
@@ -561,6 +675,12 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Integration Setup - Field Amount to invoice - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 1237520843 - Field 2248886284 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Processed with Error</source>
+          <target>Behandlede med fejl</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Integration Setup - Field Error - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 1237520843 - Field 633819257 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Gen. Bus. Posting Group</source>
           <target state="needs-review-translation" state-qualifier="tm-suggestion">Virksomhedsbogføringsgruppe</target>
@@ -574,20 +694,20 @@
           <note from="Xliff Generator" annotates="general" priority="3">Table Integration Setup - Field Gen. Prod. Posting Group - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 1237520843 - Field 4289912368 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>INT. Cust. Price Grp.</source>
-          <target state="translated">Int. Kunde Prisgr.</target>
+          <source>Cust. Price Grp.</source>
+          <target state="translated">Debitorprisgruppe</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Integration Setup - Field Int. Cust. Price Grp. - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 1237520843 - Field 2802360426 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>EXT. Cust. Price Grp.</source>
-          <target state="translated">Ekst. Kunde Prisgr.</target>
+          <source>EXT. Cust. Posting Grp.</source>
+          <target state="translated">Eks. Debitorbogføringsgruppe</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Integration Setup - Field Ext. Cust. Price Grp. - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 1237520843 - Field 2219940129 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>EK. Cust. Price Grp.</source>
-          <target state="translated">Ekst. Kunde Prisgr.</target>
+          <source>EK. Cust. Posting Grp.</source>
+          <target state="translated">EK Debitorbogføringsgruppe</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Integration Setup - Field EK Cust. Price Grp. - Property Caption</note>
         </trans-unit>
@@ -608,6 +728,36 @@
           <target state="needs-review-translation" state-qualifier="tm-suggestion">Sidefodstekst</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Integration Setup - Field Footer Text - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1237520843 - Field 1548254106 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Text G/L Acc.</source>
+          <target>Tkst Finanskonto</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Integration Setup - Field Text G/L Acc. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1237520843 - Field 2660559065 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Text Unit Of Measure</source>
+          <target>Text Enhed</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Integration Setup - Field Unit Of Measure - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1237520843 - Field 2427200997 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>External Deb. Posting Grp.</source>
+          <target>Ekstern Debitorbogføringsgruppe</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Integration Setup - Field External Deb. Posting Grp. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1237520843 - Field 2691040079 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>External EK Deb. Posting Grp.</source>
+          <target>Ekstern EK Debitorbogføringsgruppe</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Integration Setup - Field External EK Deb. Posting Grp. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1237520843 - Field 3552971128 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Domistic Deb. Posting Grp.</source>
+          <target>Intern Debitorbogføringsgruppe</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Integration Setup - Field Domistic Deb. Posting Grp. - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 1237520843 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Integration Setup</source>
@@ -945,6 +1095,18 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Webshop User Group - Field Name - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 3379003342 - Method 3152277940 - NamedType 2476940767" size-unit="char" translate="yes" xml:space="preserve">
+          <source>there are %1 Contacts that has User Group %2 do you like to disconnect?</source>
+          <target>Der er %1 Kontakter som har Brugergruppen %2 vil du fjerne forbindelsen?</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Webshop User Group - Method OnDelete - NamedType Text000</note>
+        </trans-unit>
+        <trans-unit id="Table 3379003342 - Method 3152277940 - NamedType 3114637384" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Deleting is overruled</source>
+          <target>Afbud</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Webshop User Group - Method OnDelete - NamedType Text001</note>
+        </trans-unit>
         <trans-unit id="Page 3379003342 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Webshop User Group</source>
           <target state="translated">Webshop brugergruppe</target>
@@ -969,11 +1131,35 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Item User Group - Field User Group - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 3553879277 - Field 2961552353 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Name</source>
+          <target>Navn</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Item User Group - Field Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3553879277 - Field 2842094365 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item Description</source>
+          <target>Vare Beskrivelse</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Item User Group - Field Item Description - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Page 3553879277 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Item User Group</source>
           <target state="translated">Vare brugergruppe</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Item User Group - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3553879277 - Action 1611148220 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Items Connected to Item user Group</source>
+          <target>Vare er tilknyttet til Vare brugergruppe</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Item User Group - Action User group Items - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3553879277 - Action 336618255 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Contacts Connected to Item user Group</source>
+          <target>Kontakt er tilknyttet til Vare brugergruppe</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Item User Group - Action User group Contacts - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Table 1210651842 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Webshop Integration Log</source>
@@ -1023,11 +1209,47 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Webshop Integration Log - Field Integration Action - Property OptionCaption</note>
         </trans-unit>
+        <trans-unit id="Table 1210651842 - Field 1059534406 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Action Date</source>
+          <target>Handlingsdato</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Webshop Integration Log - Field Action Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1210651842 - Field 1986744133 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Action Time</source>
+          <target>Handlingstid</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Webshop Integration Log - Field Action Time - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Page 1210651842 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Webshop Integration Log</source>
           <target state="translated">Webshop integrationslog</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Webshop Integration Log - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3617480757 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Login Prefix</source>
+          <target>Login-præfiks</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Login Prefix - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3617480757 - Field 3004954119 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Code</source>
+          <target>Kode</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Login Prefix - Field Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3617480757 - Field 3461834954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target>Beskrivelse</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Login Prefix - Field Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3617480757 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Login Prefix</source>
+          <target>Login-præfiks</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Login Prefix - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 472856844 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>HBR Vehicle</source>
@@ -1263,6 +1485,12 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table HBR Cue - Field Outstanding Purch. Inv. Approv - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 3789430901 - Field 795416853 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Outstanding Int. Documents</source>
+          <target>[Udestående Int. Bilag</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table HBR Cue - Field Outstanding Int. Documents - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 3556498637 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>HBR Budget Regulation Rate</source>
           <target state="translated">HBR Budgetreguleringsrate</target>
@@ -1323,71 +1551,173 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit HBRFunctions - NamedType JobNoLbl</note>
         </trans-unit>
-        <trans-unit id="Codeunit 346412068 - Method 335321606 - NamedType 2476940767" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Error log %1</source>
-          <target state="translated">Fejllog %1</target>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit HBR Integration Managment - Method CreateInvoiceHeader - NamedType Text000</note>
-        </trans-unit>
         <trans-unit id="Codeunit 346412068 - Method 335321606 - NamedType 3114637384" size-unit="char" translate="yes" xml:space="preserve">
-          <source>------End--%1</source>
-          <target state="needs-review-translation" state-qualifier="tm-suggestion">Slut: %1</target>
+          <source>------End :%1------</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">------Slut: %1------</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit HBR Integration Managment - Method CreateInvoiceHeader - NamedType Text001</note>
         </trans-unit>
+        <trans-unit id="Codeunit 346412068 - Method 335321606 - NamedType 3752334001" size-unit="char" translate="yes" xml:space="preserve">
+          <source>NA</source>
+          <target>NA</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit HBR Integration Managment - Method CreateInvoiceHeader - NamedType Text002</note>
+        </trans-unit>
         <trans-unit id="Codeunit 346412068 - Method 3075023185 - NamedType 2476940767" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Integration Header:%1 Log No.:%2</source>
-          <target state="translated">Integrationshoved:%1 Lognr. :%2</target>
+          <source>Integration Header:%1</source>
+          <target state="translated">Integrationshoved:%1</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit HBR Integration Managment - Method checkIntegrationHeader - NamedType Text000</note>
         </trans-unit>
         <trans-unit id="Codeunit 346412068 - Method 3075023185 - NamedType 3114637384" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Customer No. %1 dose not exist.</source>
-          <target state="translated">Debitornr. %1 findes ikke.</target>
+          <source>Customer No.:  %1 dose not exist. Integraion Header No.: %2</source>
+          <target state="translated">Debitornr. %1 findes ikke. Integrationshoved %2</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit HBR Integration Managment - Method checkIntegrationHeader - NamedType Text001</note>
         </trans-unit>
         <trans-unit id="Codeunit 346412068 - Method 3075023185 - NamedType 3752334001" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Chek application Area %1 on integration Setup .</source>
-          <target state="translated">Check applikationsområde %1 i integrationsopsætning</target>
+          <source>Chek application Area %1 on integration Setup. Integraion Header No.: %2 .</source>
+          <target state="translated">Check applikationsområde %1 i integrationsopsætning, Integrationshoved %2</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit HBR Integration Managment - Method checkIntegrationHeader - NamedType Text002</note>
         </trans-unit>
+        <trans-unit id="Codeunit 346412068 - Method 3075023185 - NamedType 95063322" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Contact No.:  %1 dose not belong to Customer No.: %2 on integration Setup. Integraion Header No.: %3 .</source>
+          <target>Kontakt %1 er ikke tilknyttet til Debitornr. :%2. Integrationshoved: %3</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit HBR Integration Managment - Method checkIntegrationHeader - NamedType Text003</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 346412068 - Method 3075023185 - NamedType 732759939" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Contact No.:  %1 dose not exist OR empty. Integraion Header No.: %2</source>
+          <target>Kontakt %1 findes ikke eller tom. Integraionshoved.: %2</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit HBR Integration Managment - Method checkIntegrationHeader - NamedType Text004</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 346412068 - Method 3075023185 - NamedType 1370456556" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Our Reference field must not exceed 20 characters, Integraion Header No.: %1</source>
+          <target>Vores referencefelt må ikke overstige 20 tegn, Integraionshoved: %1</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit HBR Integration Managment - Method checkIntegrationHeader - NamedType Text005</note>
+        </trans-unit>
         <trans-unit id="Codeunit 346412068 - Method 1022175338 - NamedType 2476940767" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Unit of Measure field cannot be empty line No. %1.</source>
-          <target state="translated">Enhed kan ikke være tom Linjenr. %1.</target>
+          <source>Unit of Measure field cannot be empty line No. %1. Integrtion Hrader: %2</source>
+          <target state="translated">Enhedsfelt må ikke være tom Linjenr. %1. Integrationshoved: %2 </target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit HBR Integration Managment - Method checkIntegrationLine - NamedType Text000</note>
         </trans-unit>
         <trans-unit id="Codeunit 346412068 - Method 1022175338 - NamedType 3114637384" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Error Unit of Measure  %1 line No.%2.</source>
-          <target state="translated">Fejl Enhed %1 Linjenr. %2.</target>
+          <source>Error Unit of Measure  %1 line No.%2. Integration Header %3</source>
+          <target state="translated">Fejl Enhed %1 Linjenr. %2. Integrationshoved %3</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit HBR Integration Managment - Method checkIntegrationLine - NamedType Text001</note>
         </trans-unit>
+        <trans-unit id="Codeunit 346412068 - Method 1022175338 - NamedType 3752334001" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Error Item No.  %1 line No.%2 Weborder No. %3. not exist</source>
+          <target>Fejl Varenr. %1 Linjenr. %2 Webordrenr: %3 Eksisterer ikke. </target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit HBR Integration Managment - Method checkIntegrationLine - NamedType Text002</note>
+        </trans-unit>
         <trans-unit id="Codeunit 346412068 - Method 1022175338 - NamedType 95063322" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Integration Header:%1 Log No.:%2</source>
-          <target state="translated">Integrationshoved:%1 Lognr.: %2</target>
+          <source>Error Item No.  %1 line No.%2. Weborder No. %3 is Blocked</source>
+          <target state="translated">Fejl Varenr. %1 Linjenr. %2 Webordrenr: %3 er spærret</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit HBR Integration Managment - Method checkIntegrationLine - NamedType Text003</note>
         </trans-unit>
-        <trans-unit id="Codeunit 346412068 - Method 1561295580 - NamedType 2082714319" size-unit="char" translate="yes" xml:space="preserve">
-          <source>There is one or more contact connected to Customer %1 Do you want to update Contacts? </source>
-          <target state="translated">Der er en eller flere kontakter forbundet til Debitor %1. Vil du opdatere kontakterne?</target>
+        <trans-unit id="Codeunit 346412068 - Method 1022175338 - NamedType 732759939" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Error: Not a valid Amount value, line No.%1. Weborder No. %2</source>
+          <target>Fejl: Ikke en gyldig Beløb, linje nr.% 1. Weborder nr.% 2</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit HBR Integration Managment - Method UbdateContacts - NamedType Text00</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit HBR Integration Managment - Method checkIntegrationLine - NamedType Text004</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 346412068 - Method 697869127 - NamedType 2476940767" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Error log %1</source>
+          <target>Fej log %1</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit HBR Integration Managment - Method CreateWeborderHeader - NamedType Text000</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 346412068 - Method 697869127 - NamedType 2951775720" size-unit="char" translate="yes" xml:space="preserve">
+          <source>NA</source>
+          <target>NA</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit HBR Integration Managment - Method CreateWeborderHeader - NamedType text001</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 346412068 - Method 3112460553 - NamedType 3114637384" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Web Order</source>
+          <target>Webordre</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit HBR Integration Managment - Method InsertWeborderLine - NamedType Text001</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 346412068 - Method 3889309826 - NamedType 2476940767" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Create Integration Invoice Process</source>
+          <target>Opret faktura i gange</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit HBR Integration Managment - Method CheckIntegrationInfo - NamedType Text000</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 346412068 - Method 3889309826 - NamedType 3114637384" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The Job Ended with %1 error.</source>
+          <target>Jobbet afsluttede med %1 fej </target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit HBR Integration Managment - Method CheckIntegrationInfo - NamedType Text001</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 346412068 - Method 3889309826 - NamedType 3752334001" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The Job Ended with No error</source>
+          <target>Jobbet afsluttede uden fejl</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit HBR Integration Managment - Method CheckIntegrationInfo - NamedType Text002</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 346412068 - Method 3889309826 - NamedType 95063322" size-unit="char" translate="yes" xml:space="preserve">
+          <source>------------End------------</source>
+          <target>------------Slut------------</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit HBR Integration Managment - Method CheckIntegrationInfo - NamedType Text003</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 346412068 - Method 2371993968 - NamedType 2476940767" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Create Weborder Process</source>
+          <target>Opret Webordre proces</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit HBR Integration Managment - Method CheckWebshopInfo - NamedType Text000</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 346412068 - Method 2371993968 - NamedType 3114637384" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The Job Ended with %1 error.</source>
+          <target>Jobbet afsluttede med %1 fejl</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit HBR Integration Managment - Method CheckWebshopInfo - NamedType Text001</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 346412068 - Method 2371993968 - NamedType 3752334001" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The Job CreateInvoiceHeaderEnded with No error</source>
+          <target>Jobbet  opret fakturhoved afslutede uden fejl</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit HBR Integration Managment - Method CheckWebshopInfo - NamedType Text002</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 346412068 - Method 2371993968 - NamedType 95063322" size-unit="char" translate="yes" xml:space="preserve">
+          <source>------------End------------</source>
+          <target>------------Slut------------</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit HBR Integration Managment - Method CheckWebshopInfo - NamedType Text003</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 677641258 - Method 1647656935 - NamedType 3114637384" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item No.: </source>
+          <target>Varenr.:</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Label Printer Managment - Method PrintBarcode - NamedType Text001</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 677641258 - Method 1647656935 - NamedType 3752334001" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Shelf: </source>
+          <target>Placerin</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Label Printer Managment - Method PrintBarcode - NamedType Text002</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 677641258 - Method 1647656935 - NamedType 4094255431" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Size: </source>
+          <target>St.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Label Printer Managment - Method PrintBarcode - NamedType Test003</note>
         </trans-unit>
         <trans-unit id="Codeunit 2200102716 - NamedType 3974808153" size-unit="char" translate="yes" xml:space="preserve">
           <source>User with Windows Security ID no. %1 not found</source>
           <target state="translated">Bruger med Windows Security ID nr. %1 ikke fundet</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit AD Integration Management - NamedType UserNotFoundErr</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 3702475774 - Method 3255864652 - NamedType 3666102925" size-unit="char" translate="yes" xml:space="preserve">
-          <source>No workflow Enabled for this Record type</source>
-          <target state="translated">Der findes ikke workflow for denne type record.</target>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit WF Integration Service - Method CheckWorkflowEnabled - NamedType NoWorkflowEnb</note>
         </trans-unit>
         <trans-unit id="Codeunit 1322759979 - NamedType 4149330563" size-unit="char" translate="yes" xml:space="preserve">
           <source>Approval Request for Service Order is requested</source>
@@ -1443,11 +1773,35 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit WF Code Service - NamedType ErrorServiceOrderNotRelased</note>
         </trans-unit>
+        <trans-unit id="Codeunit 1322759979 - NamedType 1650014995" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Cannot perform action because Service Order is not Released to Ship</source>
+          <target>Cannot perform action because Service Order is not Released to Ship</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit WF Code Service - NamedType ErrorNotReleasedToShip</note>
+        </trans-unit>
         <trans-unit id="Codeunit 1322759979 - NamedType 901844779" size-unit="char" translate="yes" xml:space="preserve">
           <source>The approval process must be cancelled or completed to reopen this document.</source>
           <target state="needs-review-translation" state-qualifier="tm-suggestion">Godkendelsesprocessen skal annulleres eller fuldføres, inden dette dokument kan åbnes igen.</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit WF Code Service - NamedType ErrorCancelApproval</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1322759979 - NamedType 1105572627" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Cannot perform action because Approval has been sent for Service Order.</source>
+          <target>Cannot perform action because Approval has been sent for Service Order.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit WF Code Service - NamedType ErrorServiceHeaderApprovalSent</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1322759979 - NamedType 2836194370" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Cannot set Approval Status to Released because workflow is enabled for the Record</source>
+          <target>Cannot set Approval Status to Released because workflow is enabled for the Record</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit WF Code Service - NamedType ErrorWorkFlowEnabled</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1322759979 - NamedType 371125837" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Cannot send Approval Request because no workflow is enabled for the Record</source>
+          <target>Cannot send Approval Request because no workflow is enabled for the Record</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit WF Code Service - NamedType ErrorWorkFlowNotEnabled</note>
         </trans-unit>
         <trans-unit id="Page 2254243382 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Integration Line List</source>
@@ -1508,6 +1862,18 @@
           <target state="translated">Integrationsbemærkningslinjer</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Integration Overview - Control IntegrationComments - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 6258199 - Action 1998269638 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Show &amp;Process Log</source>
+          <target>Vis &amp;Proceslog</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Integration Overview - Action Show&amp;Process Log - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 6258199 - Action 1718079760 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>S&amp;how All</source>
+          <target>V&amp;is Alle</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Integration Overview - Action S&amp;how All - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 986872179 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Integration Header URS WS</source>
@@ -1641,6 +2007,42 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Sales Invoice Line WS - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 2818772647 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>HBR Integrations</source>
+          <target>HBR Integration</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page HBR Integrations - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2818772647 - Control 795416853 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Outstanding Integrations Documents</source>
+          <target>Udestående bilag</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page HBR Integrations - Control Outstanding Int. Documents - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2818772647 - Control 795416853 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the number of outstanding Integration Documents to process</source>
+          <target>Antal udestående bilag til behandling</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page HBR Integrations - Control Outstanding Int. Documents - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1458417517 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>HBR GL Entry WS</source>
+          <target>HBR finanskonto WS</target>
+          <note from="Developer" annotates="general" p="p" riority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page HBR GL Entry WS - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3732224266 - Property 3830149458" size-unit="char" translate="yes" xml:space="preserve">
+          <source>TEST PAGE</source>
+          <target>Tespage</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Test - Property caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3732224266 - Action 1139653482 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Test Me</source>
+          <target>TestMe</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Test - Action TEST - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Page 351846174 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>HBR Vehicles</source>
           <target state="translated">HBR Køretøjer</target>
@@ -1760,6 +2162,12 @@
           <target state="needs-review-translation" state-qualifier="tm-suggestion">Angiver den anslåede dato, hvor servicen skal starte på denne serviceartikellinje.</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page HBRService Tasks - Control Response Date - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 214575893 - Control 3320823955 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ServiceItem Order</source>
+          <target>Sercicevare ordre</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page HBRService Tasks - Control Line No. - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 214575893 - Control 729963538 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the estimated time when service should start on this service item.</source>
@@ -6015,11 +6423,29 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report HBR Purchase - Quote - NamedType GLNCaptionLbl</note>
         </trans-unit>
+        <trans-unit id="Report 2403263616 - NamedType 1572346900" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Variant Code</source>
+          <target>Variant Kode</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report HBR Purchase - Quote - NamedType VariantCodeLbl</note>
+        </trans-unit>
         <trans-unit id="Report 1164741062 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Integration Invoicing</source>
           <target state="translated">Integrationsfakturering</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report Integration Invoicing - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1164741062 - Control 2346885236 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Options</source>
+          <target><Option></Option></target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Integration Invoicing - Control Options - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1164741062 - Control 3037438984 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posting</source>
+          <target>Bogføring</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Integration Invoicing - Control PostingDate - Property Caption</note>
         </trans-unit>
         <trans-unit id="Report 1164741062 - NamedType 2476940767" size-unit="char" translate="yes" xml:space="preserve">
           <source>%1 Setup missing</source>
@@ -6028,16 +6454,28 @@
           <note from="Xliff Generator" annotates="general" priority="3">Report Integration Invoicing - NamedType Text000</note>
         </trans-unit>
         <trans-unit id="Report 1164741062 - NamedType 3114637384" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Invoiceing Debitors. #1##############################\\</source>
+          <source>Invoiceing Debitors: #1####################\</source>
           <target state="translated">Fakturere Debitors. #1##############################\\</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report Integration Invoicing - NamedType Text001</note>
         </trans-unit>
         <trans-unit id="Report 1164741062 - NamedType 3752334001" size-unit="char" translate="yes" xml:space="preserve">
-          <source>The Job ended with %1 Error. Se the error log.</source>
+          <source>Integrations : @2@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</source>
           <target state="translated">Kørslen sluttede med %1 Fejl. Se fejlloggen.</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report Integration Invoicing - NamedType Text002</note>
+        </trans-unit>
+        <trans-unit id="Report 1164741062 - NamedType 732759939" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Webshop is not a valid choice</source>
+          <target>Webshop er ikke tillad</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Integration Invoicing - NamedType Text004</note>
+        </trans-unit>
+        <trans-unit id="Report 1164741062 - NamedType 1370456556" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The Job ended with %1 Error. Se the error log.</source>
+          <target>Jobbet afslutede med %1 fejl. se joblog</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Integration Invoicing - NamedType Text005</note>
         </trans-unit>
         <trans-unit id="Report 3234235265 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Label Print</source>
@@ -6069,6 +6507,12 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report Print Label - Control VariantCode - Property caption</note>
         </trans-unit>
+        <trans-unit id="Report 3234235265 - Control 3546637627 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Number of labels</source>
+          <target>Antal label</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Print Label - Control AllVarients - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Report 3234235265 - Control 825167671 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Number of labels</source>
           <target state="translated">Antal labels</target>
@@ -6092,6 +6536,48 @@
           <target state="translated">Varenr. %1 findes ikke</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report Print Label - Method TestItemNo - NamedType Text001</note>
+        </trans-unit>
+        <trans-unit id="Report 1396751028 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Webshop Invoicing</source>
+          <target>Webshop fakturering</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Webshop Invoicing - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1396751028 - Control 2346885236 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Options</source>
+          <target>option</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Webshop Invoicing - Control Options - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1396751028 - Control 3037438984 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posting</source>
+          <target>Bogføring</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Webshop Invoicing - Control PostingDate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1396751028 - NamedType 2476940767" size-unit="char" translate="yes" xml:space="preserve">
+          <source>%1 Setup missing</source>
+          <target>% Findes ikke i opsætning</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Webshop Invoicing - NamedType Text000</note>
+        </trans-unit>
+        <trans-unit id="Report 1396751028 - NamedType 3114637384" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Invoiceing : #1####################\</source>
+          <target>Fakturering : #1####################\ </target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Webshop Invoicing - NamedType Text001</note>
+        </trans-unit>
+        <trans-unit id="Report 1396751028 - NamedType 3752334001" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Webshop : @2@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</source>
+          <target>Webshop : @2@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Webshop Invoicing - NamedType Text002</note>
+        </trans-unit>
+        <trans-unit id="Report 1396751028 - NamedType 1370456556" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The Job ended with %1 Error. Se the error log.</source>
+          <target>Jobbet afsluttet med % fejl. see joblog.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Webshop Invoicing - NamedType Text005</note>
         </trans-unit>
         <trans-unit id="Report 616977972 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>HBR Purchase - Order</source>
@@ -6566,6 +7052,12 @@
           <target state="translated">Planlagt modtagelsesdato</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report HBR Purchase - Order - NamedType PlannedReceiptDateLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 616977972 - NamedType 3992390187" size-unit="char" translate="yes" xml:space="preserve">
+          <source>HBR Item No.</source>
+          <target>HBR Varenr.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report HBR Purchase - Order - NamedType No_PurchLine_Lbl</note>
         </trans-unit>
         <trans-unit id="Report 920378557 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Service Tasks</source>
@@ -7995,8 +8487,20 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">XmlPort SKF Payment journal - Property Caption</note>
         </trans-unit>
+        <trans-unit id="XmlPort 2723382487 - XmlPortNode 3883182266 - Method 192879926 - NamedType 1541774099" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Invoice No.:</source>
+          <target>Fakturanr.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort SKF Payment journal - XmlPortNode Integer - Method OnBeforeInsertRecord - NamedType lText000</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 2723382487 - Control 147876582 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Jornal Template Name</source>
+          <target>Kladdetypenavn</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort SKF Payment journal - Control JourTemplate - Property Caption</note>
+        </trans-unit>
         <trans-unit id="XmlPort 2723382487 - Control 1830915383 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Journal Batch</source>
+          <source>Journal Batch Name</source>
           <target state="needs-review-translation" state-qualifier="tm-suggestion">Kladdenavn</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">XmlPort SKF Payment journal - Control JournalBatch - Property Caption</note>
@@ -8020,16 +8524,46 @@
           <note from="Xliff Generator" annotates="general" priority="3">XmlPort SKF Payment journal - Control postingDate - Property Caption</note>
         </trans-unit>
         <trans-unit id="XmlPort 2723382487 - Control 4179522451 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>file Name</source>
+          <source>File Name</source>
           <target state="translated">Filnavn</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">XmlPort SKF Payment journal - Control fileName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 2723382487 - Control 4179522451 - Method 1213635141 - NamedType 1541774099" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Upload .csv file</source>
+          <target>Hent .csv fil</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort SKF Payment journal - Control fileName - Method OnLookup - NamedType lText000</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 2723382487 - RequestPage 2516438534 - Method 4128543304 - NamedType 1541774099" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Journal Batch Name  and Posting date cannot be empty</source>
+          <target>Kaldetypenavn, Kladenavn og bogføringsdato skal udfyldes.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort SKF Payment journal - RequestPage RequestOptionsPage - Method OnClosePage - NamedType lText000</note>
         </trans-unit>
         <trans-unit id="XmlPort 593685398 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>File Integration KMD</source>
           <target state="translated">Filintegration KMD</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">XmlPort File Integration KMD - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 593685398 - Control 2060505990 - Property 3830149458" size-unit="char" translate="yes" xml:space="preserve">
+          <source>KMD</source>
+          <target>KMD</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort File Integration KMD - Control KMD - Property caption</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 593685398 - Control 147876582 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Jornal Template Name</source>
+          <target>Kladdetypenavn</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort File Integration KMD - Control JourTemplate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 593685398 - Control 1972486082 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Jornal Name</source>
+          <target>Kladdenavn</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort File Integration KMD - Control JournalName - Property Caption</note>
         </trans-unit>
         <trans-unit id="XmlPort 593685398 - Method 2339874109 - NamedType 2179470716" size-unit="char" translate="yes" xml:space="preserve">
           <source>Type Journal Name</source>
@@ -8079,11 +8613,59 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension HBRPContactCardExt - Control Integration - Property Caption</note>
         </trans-unit>
+        <trans-unit id="PageExtension 2472213455 - Action 1780745815 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3542408424">
+          <source>Posted Invoice Lines</source>
+          <target>Bogf. fakturalinjer</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension HBRPContactCardExt - Action Posted Invoice Lines - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2472213455 - Action 1780745815 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3542408424">
+          <source>Posted Invoice Lines for Webshop Contact</source>
+          <target>Bogf. fakturalinjer Kundemedarbjede.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension HBRPContactCardExt - Action Posted Invoice Lines - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="PageExtension 4107215964 - Control 2782249122 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Integration</source>
           <target state="translated">Integration</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension HBRPItemCardExt - Control Integration - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4107215964 - Action 3553879277 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1434786627">
+          <source>Item User Group</source>
+          <target>Vare Brugergruppe</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension HBRPItemCardExt - Action Item User Group - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4107215964 - Action 3553879277 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1434786627">
+          <source>Item User Group for Webshop</source>
+          <target>Vare Brugergruppe Webshop</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension HBRPItemCardExt - Action Item User Group - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1715001681 - Action 2457601185 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2583272393">
+          <source>KMD payroll</source>
+          <target>KMD løn</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension HBRGeneralJournal - Action KMD Payroll - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1715001681 - Action 2457601185 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2583272393">
+          <source>Reading KMD payroll file</source>
+          <target>Indlæs KMD lønfil</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension HBRGeneralJournal - Action KMD Payroll - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1715001681 - Action 890393587 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2583272393">
+          <source>SKF Paymets</source>
+          <target>SKF udbetalinger</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension HBRGeneralJournal - Action SKF Paymets - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1715001681 - Action 890393587 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2583272393">
+          <source>Reading SKF Paymets file</source>
+          <target>Indlæs SKF udbetalingsfil</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension HBRGeneralJournal - Action SKF Paymets - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="PageExtension 3866769038 - Control 3511817141 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Vehicle</source>
@@ -8120,6 +8702,12 @@
           <target state="translated">Opdater Debitorinformation</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension HBRPostedSalesCreditMemo - Action Update Customer Information - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1273153753 - Action 2263333159 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 399439745">
+          <source>Delete Service Invoice</source>
+          <target>Slet servicefaktura</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension HBR Service Invoices - Action Delete Service Invoice - Property Caption</note>
         </trans-unit>
         <trans-unit id="PageExtension 1168818255 - Control 1127952736 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Status</source>
@@ -8168,6 +8756,18 @@
           <target state="needs-review-translation" state-qualifier="tm-suggestion">Åbn dokumentet igen for at ændre det, efter at det er blevet godkendt. Godkendte dokumenter har status Frigivet og skal åbnes, før de kan ændres</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension HBR Service Order - Action Reopen Approval - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2939000965 - Action 1861400242 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2145436509">
+          <source>Release</source>
+          <target>Release</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension HBR Service Order - Action ReleaseDocument - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2939000965 - Action 1861400242 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2145436509">
+          <source>Release the document to the next stage of processing. When a document is released, it will be included in all availability calculations from the expected receipt date of the items. You must reopen the document before you can make changes to it.</source>
+          <target>Release the document to the next stage of processing. When a document is released, it will be included in all availability calculations from the expected receipt date of the items. You must reopen the document before you can make changes to it.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension HBR Service Order - Action ReleaseDocument - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="PageExtension 352715331 - Control 2877945414 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Purchase Order No.</source>
@@ -8277,6 +8877,18 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension HBRCustomer - Field Webshop - Property Caption</note>
         </trans-unit>
+        <trans-unit id="TableExtension 2610693280 - Field 3617480757 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1994964448">
+          <source>Login Prefix</source>
+          <target>Login-Præfiks</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension HBRCustomer - Field Login Prefix - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2610693280 - Method 63611230 - NamedType 2082714319" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1994964448">
+          <source>There is one or more contact connected to Customer %1 do you want to continue ?</source>
+          <target>En eller flere Kundemedarbjede er tilknyttet til Debitor %1 vil du fortsætte?</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension HBRCustomer - Method UpdateContacts - NamedType Text00</note>
+        </trans-unit>
         <trans-unit id="TableExtension 3101898652 - Field 1864885360 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Webshop</source>
           <target state="translated">Webshop</target>
@@ -8289,9 +8901,21 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension HBRContact - Field Webshop User Group - Property Caption</note>
         </trans-unit>
+        <trans-unit id="TableExtension 3101898652 - Field 3617480757 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3993128796">
+          <source>Login Prefix</source>
+          <target>Login-Præfiks</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension HBRContact - Field Login Prefix - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3101898652 - Field 387747209 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3993128796">
+          <source>Employee Code</source>
+          <target>Kundemedarbejde kode</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension HBRContact - Field Employee Code - Property Caption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 3101898652 - Method 147873798 - NamedType 2476940767" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Customer %1 is not recognized as webshope user. Please check the Customer value Webshop on Customer Card</source>
-          <target state="translated">Debitor %1 er ikke genkendt som en Webshopbruger. Tjek Debitorværdi Webshop på Debitorkortet.</target>
+          <source>Customer %1 is not recognized as webshope user. Please check the value of Webshop field on Customer Card</source>
+          <target state="translated">Debitor %1 er ikke en Webshopbruger. Tjek Debitorværdi Webshop på Debitorkortet.</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension HBRContact - Method CheckCustomer - NamedType Text000</note>
         </trans-unit>
@@ -8463,6 +9087,18 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension HBR Sales Header - Field Webshop - Property Caption</note>
         </trans-unit>
+        <trans-unit id="TableExtension 3486731953 - Method 3906983871 - NamedType 2476940767" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
+          <source>Order %1 is connected to a weborder do you want to continue?</source>
+          <target>Ordre %1 er tilknyttet til en wwbordre vil du fortsætte?</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension HBR Sales Header - Method OnAfterModify - NamedType Text000</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3486731953 - Method 3906983871 - NamedType 3114637384" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
+          <source>The filed value %1:%2 have not been changed</source>
+          <target>Felt værdien %1:%2 blev ikke ændret</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension HBR Sales Header - Method OnAfterModify - NamedType Text001</note>
+        </trans-unit>
         <trans-unit id="TableExtension 3732412008 - NamedType 4130530242" size-unit="char" translate="yes" xml:space="preserve">
           <source>Cannot create new Job Planning Line because Job Task %1 has status %2.</source>
           <target state="translated">Kan ikke lave ny Sagsplanlægningslinje fordi Sagsopgave %1 har status %2.</target>
@@ -8481,11 +9117,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension HBR Service Header - Field Approval Status - Property OptionCaption</note>
         </trans-unit>
-        <trans-unit id="TableExtension 2448924198 - Method 868568844 - NamedType 426636501" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="TableExtension 2448924198 - Change 4190130733 - Method 3279464882 - NamedType 426636501" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3610197182">
           <source>You cannot modify Service Order %1 because Approval Status is %2</source>
-          <target state="translated">Du kan ikke ændre serviceordre %1 fordi godkendelsesstatus er %2</target>
+          <target>You cannot modify Service Order %1 because Approval Status is %2&lt;</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension HBR Service Header - Method OnBeforeModify - NamedType ErrorApprovalStatus</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension HBR Service Header - Change Customer No. - Method OnBeforeValidate - NamedType ErrorApprovalStatus</note>
         </trans-unit>
         <trans-unit id="TableExtension 542711127 - Method 2451657066 - NamedType 426636501" size-unit="char" translate="yes" xml:space="preserve">
           <source>You cannot modify Service Order %1 because Approval Status is %2</source>
@@ -8493,11 +9129,29 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension HBR Service Item Lines - Method OnInsert - NamedType ErrorApprovalStatus</note>
         </trans-unit>
+        <trans-unit id="TableExtension 542711127 - Method 868568844 - NamedType 426636501" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3770883554">
+          <source>You cannot modify Service Order %1 because Approval Status is %2</source>
+          <target>You cannot modify Service Order %1 because Approval Status is %2</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension HBR Service Item Lines - Method OnBeforeModify - NamedType ErrorApprovalStatus</note>
+        </trans-unit>
         <trans-unit id="TableExtension 1731981933 - Field 2877945414 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Purchase Order No.</source>
           <target state="translated">Købsordrenr.</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension HBR Service Line - Field Purchase Order No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1731981933 - Method 2451657066 - NamedType 426636501" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2682833765">
+          <source>You cannot modify Service Order %1 because Approval Status is %2</source>
+          <target>You cannot modify Service Order %1 because Approval Status is %2</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension HBR Service Line - Method OnInsert - NamedType ErrorApprovalStatus</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1731981933 - Method 868568844 - NamedType 426636501" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2682833765">
+          <source>You cannot modify Service Order %1 because Approval Status is %2</source>
+          <target>You cannot modify Service Order %1 because Approval Status is %2</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension HBR Service Line - Method OnBeforeModify - NamedType ErrorApprovalStatus</note>
         </trans-unit>
         <trans-unit id="TableExtension 566003936 - Field 3186634526 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2072992664">
           <source>Activity Name</source>

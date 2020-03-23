@@ -15,12 +15,6 @@ page 51144 "Item User Group"
         {
             repeater(Group)
             {
-                field("Item No."; "Item No.")
-                {
-                    ApplicationArea = all;
-                    Visible = false;
-                    Editable = false;
-                }
 
                 field("User Group"; "User Group")
                 {
@@ -29,6 +23,18 @@ page 51144 "Item User Group"
                 }
 
                 field(Name; Name)
+                {
+                    ApplicationArea = all;
+
+                }
+                field("Item No."; "Item No.")
+                {
+                    ApplicationArea = all;
+                    Visible = false;
+                    Editable = false;
+                }
+
+                field("Item Description"; "Item Description")
                 {
                     ApplicationArea = all;
 
@@ -47,7 +53,7 @@ page 51144 "Item User Group"
             {
 
                 ApplicationArea = All;
-                ToolTip = 'Items Connected to user Item Group';
+                ToolTip = 'Items Connected to Item user Group';
                 Image = Group;
                 /* RunObject = page "Item User Group";
                 RunPageLink = "User Group" = FIELD("User Group"); */
@@ -66,7 +72,7 @@ page 51144 "Item User Group"
             action("User group Contacts")
             {
                 ApplicationArea = All;
-                ToolTip = 'Contacts Connected to user Item Group';
+                ToolTip = 'Contacts Connected to Item user Group';
                 Image = Group;
                 RunObject = page "Contact list";
                 RunPageLink = "Webshop User Group" = FIELD("User Group");

@@ -33,6 +33,15 @@ table 51111 "Item User Group"
             Caption = 'Name';
             DataClassification = ToBeClassified;
         }
+
+        field(40; "Item Description"; Text[50])        
+        {   
+            
+            Caption = 'Item Description';
+            FieldClass = FlowField;
+            CalcFormula = lookup(item.Description where("No."=field("Item No."))); 
+            
+        }
     }
 
     keys

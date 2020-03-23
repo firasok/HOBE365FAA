@@ -41,10 +41,12 @@ report 51101 "Print Label"
                                 ExpireDate := 0D;
                             end;
                         }
+
                         field(VariantCode; VariantCode)
                         {
                             caption = 'Variant Code';
                             TableRelation = "Item Variant";
+                            Editable = not AllVarients;
 
                             trigger OnLookup(var Text: Text): Boolean
                             var
@@ -58,13 +60,25 @@ report 51101 "Print Label"
                                     VariantCode := ItemVariant.Code;
                             end;
                         }
+
+                        field(AllVarients; AllVarients)
+                        {
+                            Caption = 'Number of labels';                       
+
+                            trigger OnValidate()
+                            begin
+                            end;
+                        }
                         field(noOfLabels; noOfLabels)
                         {
                             Caption = 'Number of labels';
                             BlankZero = true;
+                            Editable = not AllVarients;
+
 
                             trigger OnValidate()
                             begin
+                                
                             end;
                         }
                         field(Printer; Printer)
@@ -115,7 +129,7 @@ report 51101 "Print Label"
     var
     begin
         if not ItemRec.get(ItemNo) then exit;
-        LabelPrinterManagment.LabelItemBarcode(ItemRec."No.", ItemRec.Description, VariantCode, noOfLabels, Printer);
+        LabelPrinterManagment.LabelItemBarcode(ItemRec."No.", ItemRec.Description, VariantCode, noOfLabels, Printer,AllVarients);
     end;
 
     var
@@ -130,5 +144,6 @@ report 51101 "Print Label"
         noOfLabels: Integer;
         labelCount: Integer;
         ExpireDate: Date;
+        AllVarients:Boolean;
         Printer: Option ,SVNAVLA3,SVNAVLA4,SVNAVLA6,SVNAVLA9,SVNAVLA10,SVNAVLA11,SVNAVLA12;
 }

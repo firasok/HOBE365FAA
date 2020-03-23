@@ -31,7 +31,7 @@ table 51112 "Webshop Integration Log"
             ELSE
             IF ("Integration Table" = CONST(UserGroup)) "Webshop User Group"
             ELSE
-            IF ("Integration Table" = CONST(Item)) "Item"            
+            IF ("Integration Table" = CONST(Item)) "Item"
             ELSE
             IF ("Integration Table" = CONST(WebOrder)) "Sales header"."No." where("Document Type" = const(Order));
 
@@ -43,8 +43,8 @@ table 51112 "Webshop Integration Log"
             Caption = 'Integration No.2';
             DataClassification = ToBeClassified;
 
-           
-            TableRelation = IF ("Integration Table" = CONST(UserGroup)) "Item User Group"."Item No."           
+
+            TableRelation = IF ("Integration Table" = CONST(UserGroup)) "Item User Group"."Item No."
             ELSE
             IF ("Integration Table" = CONST(WebOrder)) "Sales header"."No." where("Document Type" = const(Order));
         }
@@ -57,7 +57,19 @@ table 51112 "Webshop Integration Log"
             DataClassification = ToBeClassified;
         }
 
+        field(60; "Action Date"; Date)
+        {
+            Caption = 'Action Date';
+            DataClassification = ToBeClassified;
+        }
+
+        field(70; "Action Time"; time)
+        {
+            Caption = 'Action Time';
+            DataClassification = ToBeClassified;
+        }
     }
+
     keys
     {
         key(PK; "Entry No.")

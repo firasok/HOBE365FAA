@@ -47,7 +47,7 @@ table 51110 "Webshop User Group"
         ItemUserGroup: Record "Item User Group";
         recordCount: Integer;
         Text000: Label 'there are %1 Contacts that has User Group %2 do you like to disconnect?';
-        Text001: Label 'Deleting is overrouled';
+        Text001: Label 'Deleting is overruled';
     begin
         ItemUserGroup.SetRange("User Group", Rec."No.");
         if ItemUserGroup.FindFirst then

@@ -1,4 +1,4 @@
-// Welcome to HBR Integration tabels Extention
+//HBR Integration tabels Extention
 
 
 
@@ -9,7 +9,7 @@ page 51102 "Integration Comment Line"
     ApplicationArea = All;
     UsageCategory = Administration;
     SourceTable = "Integration Comment Line";
-    Editable = true;
+    Editable = false;
 
     layout
     {
@@ -26,32 +26,31 @@ page 51102 "Integration Comment Line"
                 field("Line No."; "Line No.")
                 {
                     ApplicationArea = all;
+                    Visible = false;
 
                 }
 
                 field("Application Area"; "Application Area")
                 {
                     ApplicationArea = all;
+                    Visible = false;
                 }
 
                 field("Document Type"; "Document Type")
                 {
                     ApplicationArea = all;
+                    Visible = false;
                 }
-
-                field(Type; Type)
-                {
-                    ApplicationArea = all;
-                }
-
 
                 field(Date; Date)
                 {
                     ApplicationArea = all;
+                    Visible = false;
                 }
                 field(Code; Code)
                 {
-
+                    ApplicationArea = all;
+                    Visible = false;
                 }
                 field(Comment; Comment)
                 {
@@ -60,6 +59,7 @@ page 51102 "Integration Comment Line"
                 field("Document Line No."; "Document Line No.")
                 {
                     ApplicationArea = all;
+                    Visible = false;
                 }
             }
         }

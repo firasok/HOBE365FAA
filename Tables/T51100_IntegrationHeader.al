@@ -53,6 +53,7 @@ table 51100 "Integration Header"
         {
             Caption = 'Name 2';
             DataClassification = ToBeClassified;
+    
         }
 
         field(70; "Address"; Text[100])

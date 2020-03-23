@@ -29,7 +29,7 @@ table 51106 "Process Log Line"
             Caption = 'Description 2';
             DataClassification = ToBeClassified;
         }
-        
+
     }
     keys
     {
